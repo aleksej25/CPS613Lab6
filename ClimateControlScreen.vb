@@ -79,11 +79,13 @@
 
     Private Sub ACBox_Click(sender As Object, e As EventArgs) Handles ACBox.Click
         Me.Hide()
+        Form1.AirControllScreen1.BringToFront()
         Form1.AirControllScreen1.Show()
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
+        Form1.ECarControls.BringToFront()
         Form1.ECarControls.Show()
     End Sub
 

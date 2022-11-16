@@ -5,6 +5,7 @@ Public Class schedulerControl
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles backButton.Click
         Me.Hide()
+        Form1.CalendarControl1.BringToFront()
         Form1.CalendarControl1.Show()
     End Sub
 
@@ -551,6 +552,7 @@ Public Class schedulerControl
             Me.activityTextBox.Text = ""
             Me.locationTextBox.Text = ""
             Me.Hide()
+            Form1.CalendarControl1.BringToFront()
             Form1.CalendarControl1.Show()
         End If
     End Sub

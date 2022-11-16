@@ -23,7 +23,6 @@ Partial Class OwnerCurrentTrip
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.startLabel = New System.Windows.Forms.Label()
         Me.StartDestLabel = New System.Windows.Forms.Label()
@@ -36,18 +35,8 @@ Partial Class OwnerCurrentTrip
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OwnerArrivedLabel = New System.Windows.Forms.Label()
         Me.OwnerTimer = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BackBox
-        '
-        Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(33, 25)
-        Me.BackBox.Name = "BackBox"
-        Me.BackBox.Size = New System.Drawing.Size(40, 40)
-        Me.BackBox.TabIndex = 12
-        Me.BackBox.TabStop = False
         '
         'TitleLabel
         '
@@ -160,7 +149,7 @@ Partial Class OwnerCurrentTrip
         Me.OwnerArrivedLabel.ForeColor = System.Drawing.Color.LimeGreen
         Me.OwnerArrivedLabel.Location = New System.Drawing.Point(66, 319)
         Me.OwnerArrivedLabel.Name = "OwnerArrivedLabel"
-        Me.OwnerArrivedLabel.Size = New System.Drawing.Size(194, 30)
+        Me.OwnerArrivedLabel.Size = New System.Drawing.Size(195, 30)
         Me.OwnerArrivedLabel.TabIndex = 23
         Me.OwnerArrivedLabel.Text = "You have arrived!"
         Me.OwnerArrivedLabel.Visible = False
@@ -184,18 +173,14 @@ Partial Class OwnerCurrentTrip
         Me.Controls.Add(Me.StartDestLabel)
         Me.Controls.Add(Me.startLabel)
         Me.Controls.Add(Me.TitleLabel)
-        Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "OwnerCurrentTrip"
         Me.Size = New System.Drawing.Size(339, 642)
-        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents BackBox As PictureBox
     Friend WithEvents TitleLabel As Label
     Friend WithEvents startLabel As Label
     Friend WithEvents StartDestLabel As Label

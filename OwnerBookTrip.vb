@@ -5,7 +5,7 @@
         Form1.OwnerMainScreen1.Show()
     End Sub
 
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles laterButton.CheckedChanged
         StartLabel.Show()
         EndLabel.Show()
         StartBox.Show()
@@ -23,9 +23,7 @@
         Form1.OwnerCurrentTrip1.StartDestLabel.Text = FromBox.Text
         Form1.OwnerCurrentTrip1.OwnerDestLabel.Text = ToBox.Text
         Form1.OwnerCurrentTrip1.OwnerTimer.Start()
-        Me.Hide()
-        Form1.OwnerCurrentTrip1.BringToFront()
-        Form1.OwnerCurrentTrip1.Show()
+
         Form1.OwnerMainScreen1.isDriving = True
 
 
@@ -41,6 +39,17 @@
         Form1.OwnerCurrentTrip1.OwnerCarControlsBtn.Location = New Point(46, 496)
         Form1.OwnerCurrentTrip1.OwnerStopTrip.Location = New Point(172, 496)
 
+        Me.FromBox.Text = ""
+        Me.ToBox.Text = ""
+        Me.NowButton.Checked = False
+        Me.laterButton.Checked = False
+        Me.StartBox.Text = ""
+        Me.EndBox.Text = ""
+        Me.StartLabel.Hide()
+        Me.EndLabel.Hide()
 
+        Me.Hide()
+        Form1.OwnerCurrentTrip1.BringToFront()
+        Form1.OwnerCurrentTrip1.Show()
     End Sub
 End Class

@@ -42,5 +42,4 @@
         Form1.OwnerMainScreen1.resetAfterRider()
 
     End Sub
-
 End Class

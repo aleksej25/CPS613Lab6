@@ -3,6 +3,7 @@
     Dim negativeClicked As Boolean = False
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles backButton.Click
         Me.Hide()
+        Form1.OwnerMainScreen1.BringToFront()
         Form1.OwnerMainScreen1.Show()
     End Sub
 

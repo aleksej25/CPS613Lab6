@@ -4,6 +4,7 @@
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
+        RiderForm.RiderMainScreen1.BringToFront()
         RiderForm.RiderMainScreen1.Show()
     End Sub
 
@@ -88,9 +89,7 @@
         RiderForm.CurrentTripControl1.Book()
         RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
-        Me.Hide()
-        RiderForm.CurrentTripControl1.BringToFront()
-        RiderForm.CurrentTripControl1.Show()
+
         Form1.Requestdetails1.tripdetails.Text = "Name: " + RiderForm.riderBooking.RiderName + vbCrLf + "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime + vbCrLf + "End time: " + RiderForm.riderBooking.ToTime
         RiderForm.CurrentTripControl1.Timer.Start()
 
@@ -112,6 +111,10 @@
         Me.StartTimeBox.Hide()
         Me.EndTimeBox.Hide()
         Me.EndTimeLabel.Hide()
+
+        Me.Hide()
+        RiderForm.CurrentTripControl1.BringToFront()
+        RiderForm.CurrentTripControl1.Show()
     End Sub
 
 End Class

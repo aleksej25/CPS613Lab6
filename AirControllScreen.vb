@@ -33,8 +33,8 @@
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
-        System.Diagnostics.Debug.WriteLine(sender.Name)
         Me.Hide()
+        Form1.ClimateControlScreen1.BringToFront()
         Form1.ClimateControlScreen1.Show()
     End Sub
 

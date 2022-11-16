@@ -29,7 +29,7 @@ Partial Class OwnerBookTrip
         Me.FromBox = New System.Windows.Forms.ComboBox()
         Me.ToBox = New System.Windows.Forms.ComboBox()
         Me.NowButton = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.laterButton = New System.Windows.Forms.RadioButton()
         Me.StartLabel = New System.Windows.Forms.Label()
         Me.EndLabel = New System.Windows.Forms.Label()
         Me.StartBox = New System.Windows.Forms.ComboBox()
@@ -108,24 +108,24 @@ Partial Class OwnerBookTrip
         Me.NowButton.ForeColor = System.Drawing.Color.White
         Me.NowButton.Location = New System.Drawing.Point(56, 281)
         Me.NowButton.Name = "NowButton"
-        Me.NowButton.Size = New System.Drawing.Size(71, 32)
+        Me.NowButton.Size = New System.Drawing.Size(72, 32)
         Me.NowButton.TabIndex = 17
         Me.NowButton.TabStop = True
         Me.NowButton.Text = "Now"
         Me.NowButton.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'laterButton
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(185, 281)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(77, 32)
-        Me.RadioButton2.TabIndex = 18
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Later"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.laterButton.AutoSize = True
+        Me.laterButton.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.laterButton.ForeColor = System.Drawing.Color.White
+        Me.laterButton.Location = New System.Drawing.Point(185, 281)
+        Me.laterButton.Name = "laterButton"
+        Me.laterButton.Size = New System.Drawing.Size(77, 32)
+        Me.laterButton.TabIndex = 18
+        Me.laterButton.TabStop = True
+        Me.laterButton.Text = "Later"
+        Me.laterButton.UseVisualStyleBackColor = True
         '
         'StartLabel
         '
@@ -198,7 +198,7 @@ Partial Class OwnerBookTrip
         Me.Controls.Add(Me.StartBox)
         Me.Controls.Add(Me.EndLabel)
         Me.Controls.Add(Me.StartLabel)
-        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.laterButton)
         Me.Controls.Add(Me.NowButton)
         Me.Controls.Add(Me.ToBox)
         Me.Controls.Add(Me.FromBox)
@@ -223,7 +223,7 @@ Partial Class OwnerBookTrip
     Friend WithEvents FromBox As ComboBox
     Friend WithEvents ToBox As ComboBox
     Friend WithEvents NowButton As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents laterButton As RadioButton
     Friend WithEvents StartLabel As Label
     Friend WithEvents EndLabel As Label
     Friend WithEvents StartBox As ComboBox
