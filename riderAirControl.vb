@@ -1,4 +1,4 @@
-﻿Public Class AirControllScreen
+﻿Public Class riderAirControl
     Public Generator As System.Random = New System.Random()
     Public tempValue As Integer
     Public freshAirOn As Boolean = True
@@ -33,14 +33,13 @@
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
-        System.Diagnostics.Debug.WriteLine(sender.Name)
         Me.Hide()
-        Form1.ClimateControlScreen1.Show()
+        RiderForm.RiderClimateControl1.BringToFront()
+        RiderForm.RiderClimateControl1.Show()
     End Sub
 
     Private Sub FanSpeedBar_Scroll(sender As Object, e As EventArgs) Handles FanSpeedBar.Scroll
         Me.AirControlLabel.Text = "Fan Speed is: " + FanSpeedBar.Value.ToString
         Me.AirControlLabel.Show()
     End Sub
-
 End Class

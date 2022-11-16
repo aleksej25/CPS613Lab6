@@ -13,8 +13,8 @@
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         If Form1.riderAccess = True Then
             Me.Hide()
-            Form1.CurrentTripControl1.BringToFront()
-            Form1.CurrentTripControl1.Show()
+            RiderForm.CurrentTripControl1.BringToFront()
+            RiderForm.CurrentTripControl1.Show()
 
         ElseIf Form1.OwnerCurrentTrip1.OwnerTrip = True Then
             Me.Hide()

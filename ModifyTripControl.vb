@@ -21,21 +21,21 @@
     End Sub
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
-        Form1.CurrentTripControl1.BringToFront()
-        Form1.CurrentTripControl1.Show()
+        RiderForm.CurrentTripControl1.BringToFront()
+        RiderForm.CurrentTripControl1.Show()
     End Sub
 
     Private Sub ChangeButton_Click(sender As Object, e As EventArgs) Handles ChangeButton.Click
-        Form1.riderBooking.TripModified = True
-        Form1.riderBooking.OldDestination = Form1.riderBooking.ToLocation
-        Form1.riderBooking.NewDestination = Me.ToLocationBox.Text
-        Form1.CurrentTripControl1.ModifiedDestLabel.Text = Form1.riderBooking.NewDestination
-        Form1.CurrentTripControl1.ContinueTripButton.Show()
-        Form1.CurrentTripControl1.NextDestIndicator.Show()
-        Form1.CurrentTripControl1.ModifiedDestLabel.Show()
+        RiderForm.riderBooking.TripModified = True
+        RiderForm.riderBooking.OldDestination = RiderForm.riderBooking.ToLocation
+        RiderForm.riderBooking.NewDestination = Me.ToLocationBox.Text
+        RiderForm.CurrentTripControl1.ModifiedDestLabel.Text = RiderForm.riderBooking.NewDestination
+        RiderForm.CurrentTripControl1.ContinueTripButton.Show()
+        RiderForm.CurrentTripControl1.NextDestIndicator.Show()
+        RiderForm.CurrentTripControl1.ModifiedDestLabel.Show()
         Me.Hide()
-        Form1.CurrentTripControl1.BringToFront()
-        Form1.CurrentTripControl1.Show()
-        Form1.Tripedit1.tripdetails.Text = "New destination: " + Form1.riderBooking.NewDestination + vbCrLf + "New end time: " + Me.EndTimeBox.Text
+        RiderForm.CurrentTripControl1.BringToFront()
+        RiderForm.CurrentTripControl1.Show()
+        Form1.Tripedit1.tripdetails.Text = "New destination: " + RiderForm.riderBooking.NewDestination + vbCrLf + "New end time: " + Me.EndTimeBox.Text
     End Sub
 End Class

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj": {}
+    "E:\\Uni\\4th Year\\F2022\\CPS613\\Lab6\\cps613Project\\RentECar.vbproj": {}
   },
   "projects": {
-    "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj": {
+    "E:\\Uni\\4th Year\\F2022\\CPS613\\Lab6\\cps613Project\\RentECar.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
+        "projectUniqueName": "E:\\Uni\\4th Year\\F2022\\CPS613\\Lab6\\cps613Project\\RentECar.vbproj",
         "projectName": "RentECar",
-        "projectPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
+        "projectPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Lab6\\cps613Project\\RentECar.vbproj",
         "packagesPath": "C:\\Users\\Aleksej\\.nuget\\packages\\",
-        "outputPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\obj\\",
+        "outputPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Lab6\\cps613Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aleksej\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,4 +3,5 @@
         Me.Hide()
         Form1.CarDiagnosticControl1.Show()
     End Sub
+
 End Class

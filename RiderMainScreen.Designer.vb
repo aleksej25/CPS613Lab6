@@ -29,7 +29,6 @@ Partial Class RiderMainScreen
         Me.CurrentStatusLabel = New System.Windows.Forms.Label()
         Me.StatusLabel = New System.Windows.Forms.Label()
         Me.ViewHistoryButton = New System.Windows.Forms.Button()
-        Me.RiderLogOutButton = New System.Windows.Forms.Button()
         Me.CurrentTripButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -106,16 +105,6 @@ Partial Class RiderMainScreen
         Me.ViewHistoryButton.Text = "History"
         Me.ViewHistoryButton.UseVisualStyleBackColor = True
         '
-        'RiderLogOutButton
-        '
-        Me.RiderLogOutButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RiderLogOutButton.Location = New System.Drawing.Point(101, 528)
-        Me.RiderLogOutButton.Name = "RiderLogOutButton"
-        Me.RiderLogOutButton.Size = New System.Drawing.Size(134, 42)
-        Me.RiderLogOutButton.TabIndex = 18
-        Me.RiderLogOutButton.Text = "Log Out"
-        Me.RiderLogOutButton.UseVisualStyleBackColor = True
-        '
         'CurrentTripButton
         '
         Me.CurrentTripButton.Enabled = False
@@ -134,7 +123,6 @@ Partial Class RiderMainScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.CurrentTripButton)
-        Me.Controls.Add(Me.RiderLogOutButton)
         Me.Controls.Add(Me.ViewHistoryButton)
         Me.Controls.Add(Me.StatusLabel)
         Me.Controls.Add(Me.CurrentStatusLabel)
@@ -156,6 +144,5 @@ Partial Class RiderMainScreen
     Friend WithEvents CurrentStatusLabel As Label
     Friend WithEvents StatusLabel As Label
     Friend WithEvents ViewHistoryButton As Button
-    Friend WithEvents RiderLogOutButton As Button
     Friend WithEvents CurrentTripButton As Button
 End Class

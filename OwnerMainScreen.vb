@@ -60,11 +60,4 @@
             End If
         End If
     End Sub
-
-    Private Sub logoutButton_Click(sender As Object, e As EventArgs) Handles logoutButton.Click
-        Me.Timer1.Stop()
-        Me.Hide()
-        Form1.InitalScreen1.Show()
-    End Sub
-
 End Class

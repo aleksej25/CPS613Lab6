@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class OwnerMainScreen
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class OwnerMainScreen
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -29,7 +29,6 @@ Partial Class OwnerMainScreen
         Me.RatingsButton = New System.Windows.Forms.Button()
         Me.BookATripButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.logoutButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,22 +85,11 @@ Partial Class OwnerMainScreen
         'Timer1
         '
         '
-        'logoutButton
-        '
-        Me.logoutButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.logoutButton.Location = New System.Drawing.Point(103, 535)
-        Me.logoutButton.Name = "logoutButton"
-        Me.logoutButton.Size = New System.Drawing.Size(134, 42)
-        Me.logoutButton.TabIndex = 8
-        Me.logoutButton.Text = "Logout"
-        Me.logoutButton.UseVisualStyleBackColor = True
-        '
         'OwnerMainScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.logoutButton)
         Me.Controls.Add(Me.BookATripButton)
         Me.Controls.Add(Me.RatingsButton)
         Me.Controls.Add(Me.ScheduleButton)
@@ -120,5 +108,4 @@ Partial Class OwnerMainScreen
     Friend WithEvents RatingsButton As Button
     Friend WithEvents BookATripButton As Button
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents logoutButton As Button
 End Class

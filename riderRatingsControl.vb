@@ -18,8 +18,8 @@
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
-        Form1.RiderMainScreen1.BringToFront()
-        Form1.RiderMainScreen1.Show()
+        RiderForm.RiderMainScreen1.BringToFront()
+        RiderForm.RiderMainScreen1.Show()
     End Sub
 
     Private Sub LastCarButton_Click(sender As Object, e As EventArgs) Handles LastCarButton.Click

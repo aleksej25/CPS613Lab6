@@ -1,4 +1,4 @@
-﻿Public Class ClimateControlScreen
+﻿Public Class riderClimateControl
     Public frontOn As Boolean = False
     Public rearOn As Boolean = False
     Public driverSeatOn As Boolean = False
@@ -79,12 +79,14 @@
 
     Private Sub ACBox_Click(sender As Object, e As EventArgs) Handles ACBox.Click
         Me.Hide()
-        Form1.AirControllScreen1.Show()
+        RiderForm.RiderAirControl1.BringToFront()
+        RiderForm.RiderAirControl1.Show()
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
-        Form1.ECarControls.Show()
+        RiderForm.RidereCarControl1.BringToFront()
+        RiderForm.RidereCarControl1.Show()
     End Sub
 
 End Class

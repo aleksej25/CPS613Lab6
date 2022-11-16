@@ -22,9 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.InitalScreen1 = New RentECar.InitalScreen()
         Me.OwnerMainScreen1 = New RentECar.OwnerMainScreen()
-        Me.RiderMainScreen1 = New RentECar.RiderMainScreen()
         Me.ECarControls = New RentECar.ECarControls()
         Me.ClimateControlScreen1 = New RentECar.ClimateControlScreen()
         Me.AirControllScreen1 = New RentECar.AirControllScreen()
@@ -37,14 +35,10 @@ Partial Class Form1
         Me.collisionBox = New System.Windows.Forms.PictureBox()
         Me.WindowControl1 = New RentECar.windowControl()
         Me.RatingsControl1 = New RentECar.ratingsControl()
-        Me.BookTripScreen1 = New RentECar.BookTripScreen()
         Me.CalendarControl1 = New RentECar.calendarControl()
         Me.SchedulerControl1 = New RentECar.schedulerControl()
-        Me.RiderRatingsControl1 = New RentECar.riderRatingsControl()
-        Me.CurrentTripControl1 = New RentECar.CurrentTripControl()
         Me.riderequestn = New System.Windows.Forms.PictureBox()
         Me.Requestdetails1 = New RentECar.requestdetails()
-        Me.ModifyTripControl1 = New RentECar.ModifyTripControl()
         Me.rideupdated = New System.Windows.Forms.PictureBox()
         Me.Tripedit1 = New RentECar.tripedit()
         Me.OwnerBookTrip1 = New RentECar.OwnerBookTrip()
@@ -56,14 +50,6 @@ Partial Class Form1
         CType(Me.rideupdated, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'InitalScreen1
-        '
-        Me.InitalScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.InitalScreen1.Location = New System.Drawing.Point(-4, 1)
-        Me.InitalScreen1.Name = "InitalScreen1"
-        Me.InitalScreen1.Size = New System.Drawing.Size(338, 644)
-        Me.InitalScreen1.TabIndex = 0
-        '
         'OwnerMainScreen1
         '
         Me.OwnerMainScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
@@ -72,15 +58,6 @@ Partial Class Form1
         Me.OwnerMainScreen1.Size = New System.Drawing.Size(335, 642)
         Me.OwnerMainScreen1.TabIndex = 1
         Me.OwnerMainScreen1.Visible = False
-        '
-        'RiderMainScreen1
-        '
-        Me.RiderMainScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.RiderMainScreen1.Location = New System.Drawing.Point(0, 0)
-        Me.RiderMainScreen1.Name = "RiderMainScreen1"
-        Me.RiderMainScreen1.Size = New System.Drawing.Size(335, 642)
-        Me.RiderMainScreen1.TabIndex = 2
-        Me.RiderMainScreen1.Visible = False
         '
         'ECarControls
         '
@@ -193,14 +170,6 @@ Partial Class Form1
         Me.RatingsControl1.TabIndex = 17
         Me.RatingsControl1.Visible = False
         '
-        'BookTripScreen1
-        '
-        Me.BookTripScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.BookTripScreen1.Location = New System.Drawing.Point(0, 0)
-        Me.BookTripScreen1.Name = "BookTripScreen1"
-        Me.BookTripScreen1.Size = New System.Drawing.Size(339, 642)
-        Me.BookTripScreen1.TabIndex = 18
-        '
         'CalendarControl1
         '
         Me.CalendarControl1.Location = New System.Drawing.Point(0, 0)
@@ -217,22 +186,6 @@ Partial Class Form1
         Me.SchedulerControl1.Name = "SchedulerControl1"
         Me.SchedulerControl1.Size = New System.Drawing.Size(329, 636)
         Me.SchedulerControl1.TabIndex = 21
-        '
-        'RiderRatingsControl1
-        '
-        Me.RiderRatingsControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.RiderRatingsControl1.Location = New System.Drawing.Point(-2, -1)
-        Me.RiderRatingsControl1.Name = "RiderRatingsControl1"
-        Me.RiderRatingsControl1.Size = New System.Drawing.Size(339, 642)
-        Me.RiderRatingsControl1.TabIndex = 22
-        '
-        'CurrentTripControl1
-        '
-        Me.CurrentTripControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CurrentTripControl1.Location = New System.Drawing.Point(-2, 0)
-        Me.CurrentTripControl1.Name = "CurrentTripControl1"
-        Me.CurrentTripControl1.Size = New System.Drawing.Size(339, 642)
-        Me.CurrentTripControl1.TabIndex = 23
         '
         'riderequestn
         '
@@ -251,14 +204,6 @@ Partial Class Form1
         Me.Requestdetails1.Name = "Requestdetails1"
         Me.Requestdetails1.Size = New System.Drawing.Size(333, 640)
         Me.Requestdetails1.TabIndex = 25
-        '
-        'ModifyTripControl1
-        '
-        Me.ModifyTripControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ModifyTripControl1.Location = New System.Drawing.Point(-3, 0)
-        Me.ModifyTripControl1.Name = "ModifyTripControl1"
-        Me.ModifyTripControl1.Size = New System.Drawing.Size(339, 642)
-        Me.ModifyTripControl1.TabIndex = 26
         '
         'rideupdated
         '
@@ -306,9 +251,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cameraFailureBox)
         Me.Controls.Add(Me.breakInBox)
         Me.Controls.Add(Me.ErrorFixScreenControl1)
-        Me.Controls.Add(Me.InitalScreen1)
         Me.Controls.Add(Me.OwnerMainScreen1)
-        Me.Controls.Add(Me.RiderMainScreen1)
         Me.Controls.Add(Me.ECarControls)
         Me.Controls.Add(Me.ClimateControlScreen1)
         Me.Controls.Add(Me.AirControllScreen1)
@@ -318,19 +261,15 @@ Partial Class Form1
         Me.Controls.Add(Me.WindowControl1)
         Me.Controls.Add(Me.RatingsControl1)
         Me.Controls.Add(Me.CalendarControl1)
-        Me.Controls.Add(Me.BookTripScreen1)
         Me.Controls.Add(Me.SchedulerControl1)
-        Me.Controls.Add(Me.RiderRatingsControl1)
-        Me.Controls.Add(Me.CurrentTripControl1)
         Me.Controls.Add(Me.Requestdetails1)
-        Me.Controls.Add(Me.ModifyTripControl1)
         Me.Controls.Add(Me.Tripedit1)
         Me.Controls.Add(Me.OwnerBookTrip1)
         Me.Controls.Add(Me.OwnerCurrentTrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
-        Me.Text = "RentECar"
+        Me.Text = "Owner View"
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -340,9 +279,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents InitalScreen1 As InitalScreen
     Friend WithEvents OwnerMainScreen1 As OwnerMainScreen
-    Friend WithEvents RiderMainScreen1 As RiderMainScreen
     Friend WithEvents ECarControls As ECarControls
     Friend WithEvents ClimateControlScreen1 As ClimateControlScreen
     Friend WithEvents AirControllScreen1 As AirControllScreen
@@ -355,14 +292,10 @@ Partial Class Form1
     Friend WithEvents collisionBox As PictureBox
     Friend WithEvents WindowControl1 As windowControl
     Friend WithEvents RatingsControl1 As ratingsControl
-    Friend WithEvents BookTripScreen1 As BookTripScreen
     Friend WithEvents CalendarControl1 As calendarControl
     Friend WithEvents SchedulerControl1 As schedulerControl
-    Friend WithEvents RiderRatingsControl1 As riderRatingsControl
-    Friend WithEvents CurrentTripControl1 As CurrentTripControl
     Friend WithEvents riderequestn As PictureBox
     Friend WithEvents Requestdetails1 As requestdetails
-    Friend WithEvents ModifyTripControl1 As ModifyTripControl
     Friend WithEvents rideupdated As PictureBox
     Friend WithEvents Tripedit1 As tripedit
     Friend WithEvents OwnerBookTrip1 As OwnerBookTrip

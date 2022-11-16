@@ -1,10 +1,14 @@
-﻿Public Class Form1
+﻿Imports System.Windows
+
+Public Class Form1
     Public Shared CarBooked As Boolean = False
-    Public Shared riderAccess As Boolean
-    Public Shared riderBooking As New Booking
+    Public Shared riderAccess As Boolean = False
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
+        RiderForm.Show()
+        Me.OwnerMainScreen1.BringToFront()
+        Me.OwnerMainScreen1.Show()
     End Sub
 
     Private Sub cameraFailureBox_Click(sender As Object, e As EventArgs) Handles cameraFailureBox.Click
@@ -64,4 +68,5 @@
         Me.Tripedit1.Show()
         Me.Tripedit1.BringToFront()
     End Sub
+
 End Class

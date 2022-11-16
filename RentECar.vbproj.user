@@ -37,7 +37,31 @@
     <Compile Update="requestdetails.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="riderAirControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="riderCameraViewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="riderCarStatusControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="riderClimateControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="riderECarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RiderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="riderMediaControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="riderRatingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="riderWindowControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="schedulerControl.vb">
@@ -51,9 +75,6 @@
     </Compile>
     <Compile Update="Form1.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="InitalScreen.vb">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ECarControls.vb">
       <SubType>UserControl</SubType>

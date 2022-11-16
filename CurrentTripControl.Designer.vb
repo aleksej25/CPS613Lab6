@@ -57,7 +57,7 @@ Partial Class CurrentTripControl
         Me.TitleLabel.AutoSize = True
         Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(55, 61)
+        Me.TitleLabel.Location = New System.Drawing.Point(55, 64)
         Me.TitleLabel.Name = "TitleLabel"
         Me.TitleLabel.Size = New System.Drawing.Size(231, 30)
         Me.TitleLabel.TabIndex = 13
@@ -196,7 +196,7 @@ Partial Class CurrentTripControl
         '
         Me.ContinueTripButton.Enabled = False
         Me.ContinueTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ContinueTripButton.Location = New System.Drawing.Point(126, 379)
+        Me.ContinueTripButton.Location = New System.Drawing.Point(131, 380)
         Me.ContinueTripButton.Name = "ContinueTripButton"
         Me.ContinueTripButton.Size = New System.Drawing.Size(90, 60)
         Me.ContinueTripButton.TabIndex = 26

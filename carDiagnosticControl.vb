@@ -10,9 +10,9 @@ Public Class carDiagnosticControl
         Me.selectedCamera = "interior"
     End Sub
 
-
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
+        Form1.ECarControls.BringToFront()
         Form1.ECarControls.Show()
     End Sub
 
@@ -48,22 +48,21 @@ Public Class carDiagnosticControl
         End If
     End Sub
 
-    Private Sub exteriorButton_CheckedChanged(sender As Object, e As EventArgs) Handles exteriorButton.CheckedChanged
-        Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.camOutside
-    End Sub
-
-    Private Sub interiorButton_CheckedChanged(sender As Object, e As EventArgs) Handles interiorButton.CheckedChanged
-        Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.camInside
-    End Sub
-
     Private Sub cameraBox_Click(sender As Object, e As EventArgs) Handles cameraBox.Click
+        If interiorButton.Checked Then
+            Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.camInside
+        ElseIf exteriorButton.Checked Then
+            Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.camOutside
+        End If
         Me.Hide()
+        Form1.CameraViewControl1.BringToFront()
         Form1.CameraViewControl1.Show()
     End Sub
 
     Private Sub mapBox_Click(sender As Object, e As EventArgs) Handles mapBox.Click
         Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.carLocation
         Me.Hide()
+        Form1.CameraViewControl1.BringToFront()
         Form1.CameraViewControl1.Show()
     End Sub
 
@@ -76,7 +75,6 @@ Public Class carDiagnosticControl
         Me.kickOutBox.Image = My.Resources.ProjectResources.kickOutComplete
         Me.kickOutLabel.Text = "Successfully Kicked Out Rider"
         Me.kickOutLabel.Left = (Me.kickOutLabel.Parent.Width \ 2) - (Me.kickOutLabel.Width \ 2)
-
     End Sub
 
 End Class
