@@ -63,7 +63,7 @@ Partial Class riderWindowControl
         Me.TitleLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.TitleLabel.Font = New System.Drawing.Font("Sitka Heading", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.TitleLabel.Location = New System.Drawing.Point(61, 71)
+        Me.TitleLabel.Location = New System.Drawing.Point(64, 71)
         Me.TitleLabel.Name = "TitleLabel"
         Me.TitleLabel.Size = New System.Drawing.Size(200, 35)
         Me.TitleLabel.TabIndex = 67

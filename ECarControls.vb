@@ -11,17 +11,13 @@
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
-        If Form1.riderAccess = True Then
-            Me.Hide()
-            RiderForm.CurrentTripControl1.BringToFront()
-            RiderForm.CurrentTripControl1.Show()
-
-        ElseIf Form1.OwnerCurrentTrip1.OwnerTrip = True Then
+        If Form1.OwnerCurrentTrip1.OwnerTrip = True Then
             Me.Hide()
             Form1.OwnerCurrentTrip1.BringToFront()
             Form1.OwnerCurrentTrip1.Show()
         Else
             Me.Hide()
+            Form1.OwnerMainScreen1.BringToFront()
             Form1.OwnerMainScreen1.Show()
         End If
     End Sub
@@ -40,11 +36,13 @@
 
     Private Sub carBox_Click(sender As Object, e As EventArgs) Handles carBox.Click
         Me.Hide()
+        Form1.CarDiagnosticControl1.BringToFront()
         Form1.CarDiagnosticControl1.Show()
     End Sub
 
     Private Sub windowButton_Click(sender As Object, e As EventArgs) Handles windowButton.Click
         Me.Hide()
+        Form1.WindowControl1.BringToFront()
         Form1.WindowControl1.Show()
     End Sub
 

@@ -23,6 +23,8 @@
             Me.ConnectingLabel.Left = (Me.ConnectingLabel.Parent.Width \ 2) - (Me.ConnectingLabel.Width \ 2) - 3
             Me.ConnectionProgressBar.Value = 0
             Me.Timer1.Start()
+
+            Form1.MediaControls1.bluetoothBox.PerformClick()
         Else
             Me.bluetoothBox.Image = My.Resources.ProjectResources.bluetoothOff
             Me.bluetoothOn = False
@@ -31,6 +33,8 @@
             Me.ConnectingLabel.Left = (Me.ConnectingLabel.Parent.Width \ 2) - (Me.ConnectingLabel.Width \ 2) - 3
             Me.ConnectingLabel.Show()
             Me.Timer2.Start()
+
+            Form1.MediaControls1.bluetoothBox.PerformClick()
         End If
     End Sub
 
@@ -63,15 +67,27 @@
         If Me.TrackBar1.Value = 0 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audioMute
             Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
+
+            Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audioMute
+            Form1.MediaControls1.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value >= 1 And Me.TrackBar1.Value <= 3 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio1
             Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
+
+            Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audio1
+            Form1.MediaControls1.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value > 3 And Me.TrackBar1.Value <= 6 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio2
             Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
+
+            Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audio2
+            Form1.MediaControls1.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value > 6 And Me.TrackBar1.Value <= 10 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio3
             Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
+
+            Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audio3
+            Form1.MediaControls1.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         End If
     End Sub
 
@@ -86,6 +102,7 @@
             Me.RadioStationLabel.Show()
             Me.plusBox.Show()
             Me.minusBox.Show()
+            Form1.MediaControls1.RadioBox.PerformClick()
         Else
             Me.RadioStationLabel.Hide()
             Me.plusBox.Hide()
@@ -94,6 +111,7 @@
             Me.RadioBox.Image = My.Resources.ProjectResources.radio
             Me.radioOn = False
             Me.RadioBox.Left = 121
+            Form1.MediaControls1.RadioBox.PerformClick()
         End If
     End Sub
 

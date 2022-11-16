@@ -6,18 +6,22 @@ Public Class riderWindowControl
             Case "driveUp"
                 If Me.driverTrackBar.Value + 1 <= 10 Then
                     Me.driverTrackBar.Value += 1
+                    Form1.WindowControl1.driverTrackBar.Value += 1
                 End If
             Case "passFUp"
                 If Me.passFTrackBar.Value + 1 <= 10 Then
                     Me.passFTrackBar.Value += 1
+                    Form1.WindowControl1.passFTrackBar.Value += 1
                 End If
             Case "passBRUp"
                 If Me.passBRTrackBar.Value + 1 <= 10 Then
                     Me.passBRTrackBar.Value += 1
+                    Form1.WindowControl1.passBRTrackBar.Value += 1
                 End If
             Case "passBLUp"
                 If Me.passBLTrackBar.Value + 1 <= 10 Then
                     Me.passBLTrackBar.Value += 1
+                    Form1.WindowControl1.passBLTrackBar.Value += 1
                 End If
         End Select
     End Sub
@@ -27,18 +31,22 @@ Public Class riderWindowControl
             Case "driverDown"
                 If Me.driverTrackBar.Value - 1 >= 0 Then
                     Me.driverTrackBar.Value -= 1
+                    Form1.WindowControl1.driverTrackBar.Value -= 1
                 End If
             Case "passFDown"
                 If Me.passFTrackBar.Value - 1 >= 0 Then
                     Me.passFTrackBar.Value -= 1
+                    Form1.WindowControl1.passFTrackBar.Value -= 1
                 End If
             Case "passBRDown"
                 If Me.passBRTrackBar.Value - 1 >= 0 Then
                     Me.passBRTrackBar.Value -= 1
+                    Form1.WindowControl1.passBRTrackBar.Value -= 1
                 End If
             Case "passBLDown"
                 If Me.passBLTrackBar.Value - 1 >= 0 Then
                     Me.passBLTrackBar.Value -= 1
+                    Form1.WindowControl1.passBLTrackBar.Value -= 1
                 End If
         End Select
     End Sub
@@ -49,18 +57,22 @@ Public Class riderWindowControl
                 Case "driverDown"
                     If Me.driverTrackBar.Value - 1 >= 0 Then
                         Me.driverTrackBar.Value -= 1
+                        Form1.WindowControl1.driverTrackBar.Value -= 1
                     End If
                 Case "passFDown"
                     If Me.passFTrackBar.Value - 1 >= 0 Then
                         Me.passFTrackBar.Value -= 1
+                        Form1.WindowControl1.passFTrackBar.Value -= 1
                     End If
                 Case "passBRDown"
                     If Me.passBRTrackBar.Value - 1 >= 0 Then
                         Me.passBRTrackBar.Value -= 1
+                        Form1.WindowControl1.passBRTrackBar.Value -= 1
                     End If
                 Case "passBLDown"
                     If Me.passBLTrackBar.Value - 1 >= 0 Then
                         Me.passBLTrackBar.Value -= 1
+                        Form1.WindowControl1.passBLTrackBar.Value -= 1
                     End If
             End Select
             Thread.Sleep(250)
@@ -73,18 +85,22 @@ Public Class riderWindowControl
                 Case "driveUp"
                     If Me.driverTrackBar.Value + 1 <= 10 Then
                         Me.driverTrackBar.Value += 1
+                        Form1.WindowControl1.driverTrackBar.Value += 1
                     End If
                 Case "passFUp"
                     If Me.passFTrackBar.Value + 1 <= 10 Then
                         Me.passFTrackBar.Value += 1
+                        Form1.WindowControl1.passFTrackBar.Value += 1
                     End If
                 Case "passBRUp"
                     If Me.passBRTrackBar.Value + 1 <= 10 Then
                         Me.passBRTrackBar.Value += 1
+                        Form1.WindowControl1.passBRTrackBar.Value += 1
                     End If
                 Case "passBLUp"
                     If Me.passBLTrackBar.Value + 1 <= 10 Then
                         Me.passBLTrackBar.Value += 1
+                        Form1.WindowControl1.passBLTrackBar.Value += 1
                     End If
             End Select
             Thread.Sleep(250)
@@ -93,6 +109,7 @@ Public Class riderWindowControl
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
+        RiderForm.RidereCarControl1.BringToFront()
         RiderForm.RidereCarControl1.Show()
     End Sub
 End Class
