@@ -72,6 +72,10 @@
             Form1.MediaControls1.radioOn = False
             Form1.MediaControls1.RadioBox.Left = 121
         End If
+
+        Form1.MediaControls1.TrackBar1.Value = 0
+        Form1.MediaControls1.audioLevelLabel.Hide()
+        Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audioMute
     End Function
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

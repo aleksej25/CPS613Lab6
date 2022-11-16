@@ -86,6 +86,8 @@
         End If
 
         RiderForm.CurrentTripControl1.Book()
+        RiderForm.RiderMainScreen1.resetAfterRide()
+        Form1.OwnerMainScreen1.resetAfterRider()
         Me.Hide()
         RiderForm.CurrentTripControl1.BringToFront()
         RiderForm.CurrentTripControl1.Show()

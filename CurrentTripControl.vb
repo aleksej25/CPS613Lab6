@@ -26,6 +26,7 @@
         RiderForm.RiderMainScreen1.Show()
         RiderForm.riderBooking.Reset()
         RiderForm.RiderMainScreen1.resetAfterRide()
+        Form1.OwnerMainScreen1.resetAfterRider()
     End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick

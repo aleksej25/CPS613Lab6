@@ -89,6 +89,8 @@
             Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audio3
             Form1.MediaControls1.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         End If
+        Form1.MediaControls1.TrackBar1.Value = Me.TrackBar1.Value
+        Form1.MediaControls1.audioLevelLabel.Show()
     End Sub
 
     Private Sub RadioBox_Click(sender As Object, e As EventArgs) Handles RadioBox.Click

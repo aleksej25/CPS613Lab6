@@ -18,15 +18,13 @@
             Me.trunkButton.Image = My.Resources.ProjectResources.closeTrunk
             Me.trunkOCLabel.Text = "Trunk Open"
 
-            Form1.ECarControls.trunkButton.Image = My.Resources.ProjectResources.closeTrunk
-            Form1.ECarControls.trunkOCLabel.Text = "Trunk Open"
+            Form1.ECarControls.trunkButton.PerformClick()
         Else
             Me.trunkOpen = False
             Me.trunkButton.Image = My.Resources.ProjectResources.openTrunk
             Me.trunkOCLabel.Text = "Trunk Closed"
 
-            Form1.ECarControls.trunkButton.Image = My.Resources.ProjectResources.openTrunk
-            Form1.ECarControls.trunkOCLabel.Text = "Trunk Closed"
+            Form1.ECarControls.trunkButton.PerformClick()
         End If
     End Sub
 

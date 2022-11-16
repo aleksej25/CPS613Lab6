@@ -67,6 +67,9 @@
             RiderForm.RiderMediaControls1.RadioBox.Left = 121
         End If
 
+        RiderForm.RiderMediaControls1.TrackBar1.Value = 0
+        RiderForm.RiderMediaControls1.audioLevelLabel.Hide()
+        RiderForm.RiderMediaControls1.AudioBox.Image = My.Resources.ProjectResources.audioMute
     End Function
 
     Public Sub bookCheck()
