@@ -27,6 +27,7 @@
         RiderForm.riderBooking.Reset()
         RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
+        Me.ArrivedLabel.Hide()
     End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
@@ -45,8 +46,6 @@
             ContinueTripButton.Enabled = True
             Timer.Stop()
         End If
-
-
     End Sub
 
     Private Sub TimerReset()

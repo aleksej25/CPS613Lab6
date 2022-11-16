@@ -109,6 +109,9 @@
         Me.LaterRadioButton.Checked = False
         Me.StartTimeBox.Text = ""
         Me.EndTimeBox.Text = ""
+        Me.StartTimeBox.Hide()
+        Me.EndTimeBox.Hide()
+        Me.EndTimeLabel.Hide()
     End Sub
 
 End Class
