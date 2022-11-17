@@ -101,6 +101,12 @@
         RiderForm.CurrentTripControl1.DestinationLabel.Left = (RiderForm.CurrentTripControl1.DestinationLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.DestinationLabel.Width \ 2) - 3
         RiderForm.CurrentTripControl1.ArrivedLabel.Left = (RiderForm.CurrentTripControl1.ArrivedLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.ArrivedLabel.Width \ 2) - 3
 
+        Form1.OwnerMainScreen1.inUseLabel.Text = "Your Car is Currently" + vbCrLf + "In Use!"
+        Form1.OwnerMainScreen1.inUseLabel.Left = (Form1.OwnerMainScreen1.inUseLabel.Parent.Width \ 2) - (Form1.OwnerMainScreen1.inUseLabel.Width \ 2) - 3
+        Form1.OwnerMainScreen1.inUseLabel.Show()
+        Form1.OwnerMainScreen1.BookATripButton.Enabled = False
+
+
         Me.FromLocationBox.Text = ""
         Me.ToLocationBox.Text = ""
         Me.PeopleComboBox.Text = ""

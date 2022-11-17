@@ -28,6 +28,8 @@
         RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
         Me.ArrivedLabel.Hide()
+        Form1.OwnerMainScreen1.inUseLabel.Hide()
+        Form1.OwnerMainScreen1.BookATripButton.Enabled = True
     End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
