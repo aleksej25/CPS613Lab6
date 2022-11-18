@@ -33,8 +33,8 @@ Partial Class BookTripScreen
         Me.PeopleComboBox = New System.Windows.Forms.ComboBox()
         Me.NowRadioButton = New System.Windows.Forms.RadioButton()
         Me.LaterRadioButton = New System.Windows.Forms.RadioButton()
-        Me.FromTimeLabel = New System.Windows.Forms.Label()
-        Me.StartTimeBox = New System.Windows.Forms.ComboBox()
+        Me.futureTimeLabel = New System.Windows.Forms.Label()
+        Me.futureTimeBox = New System.Windows.Forms.ComboBox()
         Me.BookButton = New System.Windows.Forms.Button()
         Me.CaptionLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -153,24 +153,24 @@ Partial Class BookTripScreen
         Me.LaterRadioButton.Text = "Later"
         Me.LaterRadioButton.UseVisualStyleBackColor = True
         '
-        'FromTimeLabel
+        'futureTimeLabel
         '
-        Me.FromTimeLabel.AutoSize = True
-        Me.FromTimeLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FromTimeLabel.ForeColor = System.Drawing.Color.White
-        Me.FromTimeLabel.Location = New System.Drawing.Point(39, 380)
-        Me.FromTimeLabel.Name = "FromTimeLabel"
-        Me.FromTimeLabel.Size = New System.Drawing.Size(170, 23)
-        Me.FromTimeLabel.TabIndex = 20
-        Me.FromTimeLabel.Text = "Future Pick Up Time:"
+        Me.futureTimeLabel.AutoSize = True
+        Me.futureTimeLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.futureTimeLabel.ForeColor = System.Drawing.Color.White
+        Me.futureTimeLabel.Location = New System.Drawing.Point(39, 380)
+        Me.futureTimeLabel.Name = "futureTimeLabel"
+        Me.futureTimeLabel.Size = New System.Drawing.Size(170, 23)
+        Me.futureTimeLabel.TabIndex = 20
+        Me.futureTimeLabel.Text = "Future Pick Up Time:"
         '
-        'StartTimeBox
+        'futureTimeBox
         '
-        Me.StartTimeBox.FormattingEnabled = True
-        Me.StartTimeBox.Location = New System.Drawing.Point(181, 406)
-        Me.StartTimeBox.Name = "StartTimeBox"
-        Me.StartTimeBox.Size = New System.Drawing.Size(121, 23)
-        Me.StartTimeBox.TabIndex = 22
+        Me.futureTimeBox.FormattingEnabled = True
+        Me.futureTimeBox.Location = New System.Drawing.Point(181, 406)
+        Me.futureTimeBox.Name = "futureTimeBox"
+        Me.futureTimeBox.Size = New System.Drawing.Size(121, 23)
+        Me.futureTimeBox.TabIndex = 22
         '
         'BookButton
         '
@@ -200,8 +200,8 @@ Partial Class BookTripScreen
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.CaptionLabel)
         Me.Controls.Add(Me.BookButton)
-        Me.Controls.Add(Me.StartTimeBox)
-        Me.Controls.Add(Me.FromTimeLabel)
+        Me.Controls.Add(Me.futureTimeBox)
+        Me.Controls.Add(Me.futureTimeLabel)
         Me.Controls.Add(Me.LaterRadioButton)
         Me.Controls.Add(Me.NowRadioButton)
         Me.Controls.Add(Me.PeopleComboBox)
@@ -233,8 +233,8 @@ Partial Class BookTripScreen
     Friend WithEvents PeopleComboBox As ComboBox
     Friend WithEvents NowRadioButton As RadioButton
     Friend WithEvents LaterRadioButton As RadioButton
-    Friend WithEvents FromTimeLabel As Label
-    Friend WithEvents StartTimeBox As ComboBox
+    Friend WithEvents futureTimeLabel As Label
+    Friend WithEvents futureTimeBox As ComboBox
     Friend WithEvents BookButton As Button
     Friend WithEvents CaptionLabel As Label
 End Class

@@ -6,16 +6,12 @@
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles laterButton.CheckedChanged
-        StartLabel.Show()
         EndLabel.Show()
-        StartBox.Show()
         EndBox.Show()
     End Sub
 
     Private Sub NowButton_CheckedChanged(sender As Object, e As EventArgs) Handles NowButton.CheckedChanged
-        StartLabel.Hide()
         EndLabel.Hide()
-        StartBox.Hide()
         EndBox.Hide()
     End Sub
 
@@ -39,13 +35,17 @@
         Form1.OwnerCurrentTrip1.OwnerCarControlsBtn.Location = New Point(46, 496)
         Form1.OwnerCurrentTrip1.OwnerStopTrip.Location = New Point(172, 496)
 
+
+        Form1.OwnerCurrentTrip1.OwnerModifyTripButton.Show()
+        Form1.OwnerCurrentTrip1.ManualDrivingButton.Show()
+        Form1.OwnerCurrentTrip1.OwnerCarControlsBtn.Show()
+        Form1.OwnerCurrentTrip1.OwnerStopTrip.Show()
+
         Me.FromBox.Text = ""
         Me.ToBox.Text = ""
         Me.NowButton.Checked = False
         Me.laterButton.Checked = False
-        Me.StartBox.Text = ""
         Me.EndBox.Text = ""
-        Me.StartLabel.Hide()
         Me.EndLabel.Hide()
 
         Me.Hide()

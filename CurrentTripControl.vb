@@ -43,13 +43,15 @@
         If countDown = 30000 Then
 
             RiderForm.riderBooking.RideEnded = True
+            Me.ModifyTripButton.Hide()
+            Me.ContactOwnerButton.Hide()
+            Me.CarControlButton.Hide()
+            Me.ContinueTripButton.Hide()
 
-            If RiderForm.riderBooking.RideEnded = True Then
-                StopTripButton.Text = "Leave Car"
+            Me.StopTripButton.Text = "Leave Car"
+            Me.ArrivedLabel.Show()
 
-            End If
-            ArrivedLabel.Show()
-            ContinueTripButton.Enabled = True
+            Me.StopTripButton.Location = New Point(122, 496)
             Timer.Stop()
         End If
     End Sub

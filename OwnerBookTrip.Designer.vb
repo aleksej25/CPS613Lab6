@@ -30,9 +30,7 @@ Partial Class OwnerBookTrip
         Me.ToBox = New System.Windows.Forms.ComboBox()
         Me.NowButton = New System.Windows.Forms.RadioButton()
         Me.laterButton = New System.Windows.Forms.RadioButton()
-        Me.StartLabel = New System.Windows.Forms.Label()
         Me.EndLabel = New System.Windows.Forms.Label()
-        Me.StartBox = New System.Windows.Forms.ComboBox()
         Me.EndBox = New System.Windows.Forms.ComboBox()
         Me.DriveButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -127,43 +125,22 @@ Partial Class OwnerBookTrip
         Me.laterButton.Text = "Later"
         Me.laterButton.UseVisualStyleBackColor = True
         '
-        'StartLabel
-        '
-        Me.StartLabel.AutoSize = True
-        Me.StartLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.StartLabel.ForeColor = System.Drawing.Color.White
-        Me.StartLabel.Location = New System.Drawing.Point(52, 365)
-        Me.StartLabel.Name = "StartLabel"
-        Me.StartLabel.Size = New System.Drawing.Size(91, 23)
-        Me.StartLabel.TabIndex = 19
-        Me.StartLabel.Text = "Start time:"
-        Me.StartLabel.Visible = False
-        '
         'EndLabel
         '
         Me.EndLabel.AutoSize = True
         Me.EndLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EndLabel.ForeColor = System.Drawing.Color.White
-        Me.EndLabel.Location = New System.Drawing.Point(52, 441)
+        Me.EndLabel.Location = New System.Drawing.Point(33, 441)
         Me.EndLabel.Name = "EndLabel"
-        Me.EndLabel.Size = New System.Drawing.Size(83, 23)
+        Me.EndLabel.Size = New System.Drawing.Size(117, 23)
         Me.EndLabel.TabIndex = 20
-        Me.EndLabel.Text = "End time:"
+        Me.EndLabel.Text = "Depture Time:"
         Me.EndLabel.Visible = False
-        '
-        'StartBox
-        '
-        Me.StartBox.FormattingEnabled = True
-        Me.StartBox.Location = New System.Drawing.Point(156, 368)
-        Me.StartBox.Name = "StartBox"
-        Me.StartBox.Size = New System.Drawing.Size(121, 23)
-        Me.StartBox.TabIndex = 21
-        Me.StartBox.Visible = False
         '
         'EndBox
         '
         Me.EndBox.FormattingEnabled = True
-        Me.EndBox.Location = New System.Drawing.Point(156, 444)
+        Me.EndBox.Location = New System.Drawing.Point(167, 444)
         Me.EndBox.Name = "EndBox"
         Me.EndBox.Size = New System.Drawing.Size(121, 23)
         Me.EndBox.TabIndex = 22
@@ -195,9 +172,7 @@ Partial Class OwnerBookTrip
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.DriveButton)
         Me.Controls.Add(Me.EndBox)
-        Me.Controls.Add(Me.StartBox)
         Me.Controls.Add(Me.EndLabel)
-        Me.Controls.Add(Me.StartLabel)
         Me.Controls.Add(Me.laterButton)
         Me.Controls.Add(Me.NowButton)
         Me.Controls.Add(Me.ToBox)
@@ -224,9 +199,7 @@ Partial Class OwnerBookTrip
     Friend WithEvents ToBox As ComboBox
     Friend WithEvents NowButton As RadioButton
     Friend WithEvents laterButton As RadioButton
-    Friend WithEvents StartLabel As Label
     Friend WithEvents EndLabel As Label
-    Friend WithEvents StartBox As ComboBox
     Friend WithEvents EndBox As ComboBox
     Friend WithEvents DriveButton As Button
     Friend WithEvents PictureBox1 As PictureBox
