@@ -1,7 +1,7 @@
 ﻿Public Class CurrentTripControl
     'Current Trip Control'
 
-    Dim countDown As Integer = 0
+    Public countDown As Integer = 0
     Public Sub Book()
         StartDestinationLabel.Text = RiderForm.riderBooking.FromLocation
         DestinationLabel.Text = RiderForm.riderBooking.ToLocation
@@ -38,9 +38,12 @@
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
 
-        countDown = countDown + 1000
+        countDown = countDown + 1
+        Me.etaLabel.Text = "ETA: " + (30 - Me.countDown).ToString + " Minutes"
+        Me.etaLabel.Left = (Me.etaLabel.Parent.Width \ 2) - (Me.etaLabel.Width \ 2) - 3
+        Me.etaLabel.Show()
 
-        If countDown = 30000 Then
+        If countDown = 30 Then
 
             RiderForm.riderBooking.RideEnded = True
             Me.ModifyTripButton.Hide()
@@ -50,8 +53,10 @@
 
             Me.StopTripButton.Text = "Leave Car"
             Me.ArrivedLabel.Show()
-
+            Me.countDown = 0
             Me.StopTripButton.Location = New Point(122, 496)
+            Me.etaLabel.Hide()
+
             Timer.Stop()
         End If
     End Sub

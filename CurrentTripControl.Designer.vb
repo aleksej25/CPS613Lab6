@@ -39,6 +39,7 @@ Partial Class CurrentTripControl
         Me.ModifiedDestLabel = New System.Windows.Forms.Label()
         Me.ContinueTripButton = New System.Windows.Forms.Button()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.etaLabel = New System.Windows.Forms.Label()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -161,7 +162,7 @@ Partial Class CurrentTripControl
         Me.ArrivedLabel.AutoSize = True
         Me.ArrivedLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ArrivedLabel.ForeColor = System.Drawing.Color.LimeGreen
-        Me.ArrivedLabel.Location = New System.Drawing.Point(71, 261)
+        Me.ArrivedLabel.Location = New System.Drawing.Point(71, 294)
         Me.ArrivedLabel.Name = "ArrivedLabel"
         Me.ArrivedLabel.Size = New System.Drawing.Size(195, 30)
         Me.ArrivedLabel.TabIndex = 23
@@ -173,7 +174,7 @@ Partial Class CurrentTripControl
         Me.NextDestIndicator.AutoSize = True
         Me.NextDestIndicator.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.NextDestIndicator.ForeColor = System.Drawing.Color.White
-        Me.NextDestIndicator.Location = New System.Drawing.Point(32, 320)
+        Me.NextDestIndicator.Location = New System.Drawing.Point(32, 336)
         Me.NextDestIndicator.Name = "NextDestIndicator"
         Me.NextDestIndicator.Size = New System.Drawing.Size(149, 23)
         Me.NextDestIndicator.TabIndex = 24
@@ -185,7 +186,7 @@ Partial Class CurrentTripControl
         Me.ModifiedDestLabel.AutoSize = True
         Me.ModifiedDestLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ModifiedDestLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ModifiedDestLabel.Location = New System.Drawing.Point(186, 320)
+        Me.ModifiedDestLabel.Location = New System.Drawing.Point(186, 336)
         Me.ModifiedDestLabel.Name = "ModifiedDestLabel"
         Me.ModifiedDestLabel.Size = New System.Drawing.Size(110, 23)
         Me.ModifiedDestLabel.TabIndex = 25
@@ -208,11 +209,24 @@ Partial Class CurrentTripControl
         '
         Me.Timer.Interval = 1000
         '
+        'etaLabel
+        '
+        Me.etaLabel.AutoSize = True
+        Me.etaLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.etaLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.etaLabel.Location = New System.Drawing.Point(95, 254)
+        Me.etaLabel.Name = "etaLabel"
+        Me.etaLabel.Size = New System.Drawing.Size(147, 29)
+        Me.etaLabel.TabIndex = 27
+        Me.etaLabel.Text = "TemplateText"
+        Me.etaLabel.Visible = False
+        '
         'CurrentTripControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.etaLabel)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.ContinueTripButton)
         Me.Controls.Add(Me.ModifiedDestLabel)
@@ -253,4 +267,5 @@ Partial Class CurrentTripControl
     Friend WithEvents ModifiedDestLabel As Label
     Friend WithEvents ContinueTripButton As Button
     Friend WithEvents Timer As Timer
+    Friend WithEvents etaLabel As Label
 End Class

@@ -93,7 +93,9 @@
         RiderForm.CurrentTripControl1.CarControlButton.Location = New Point(55, 522)
         RiderForm.CurrentTripControl1.StopTripButton.Location = New Point(186, 522)
 
-
+        RiderForm.CurrentTripControl1.etaLabel.Text = "ETA: " + (30 - RiderForm.CurrentTripControl1.countDown).ToString + "Minutes"
+        RiderForm.CurrentTripControl1.etaLabel.Left = (RiderForm.CurrentTripControl1.etaLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.etaLabel.Width \ 2) - 3
+        RiderForm.CurrentTripControl1.etaLabel.Show()
 
         Form1.OwnerMainScreen1.inUseLabel.Text = "Your Car is Currently" + vbCrLf + "In Use!"
         Form1.OwnerMainScreen1.inUseLabel.Left = (Form1.OwnerMainScreen1.inUseLabel.Parent.Width \ 2) - (Form1.OwnerMainScreen1.inUseLabel.Width \ 2) - 3
