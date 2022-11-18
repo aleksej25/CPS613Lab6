@@ -51,9 +51,9 @@
 
     Private Sub NowRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles NowRadioButton.CheckedChanged
         FromTimeLabel.Hide()
-        EndTimeLabel.Show()
+        EndTimeLabel.Hide()
         StartTimeBox.Hide()
-        EndTimeBox.Show()
+        EndTimeBox.Hide()
     End Sub
 
     Private Sub LaterRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles LaterRadioButton.CheckedChanged
@@ -87,8 +87,11 @@
         End If
 
         RiderForm.CurrentTripControl1.Book()
+
         RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
+
+        Form1.OwnerMainScreen1.kickOutButton.Show()
 
         Form1.Requestdetails1.tripdetails.Text = "Name: " + RiderForm.riderBooking.RiderName + vbCrLf + "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime + vbCrLf + "End time: " + RiderForm.riderBooking.ToTime
         RiderForm.CurrentTripControl1.Timer.Start()

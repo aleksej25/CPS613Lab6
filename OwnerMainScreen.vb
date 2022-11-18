@@ -1,5 +1,6 @@
 ﻿Public Class OwnerMainScreen
     Public timerStatus As Integer = 0
+    Public kickOutTimer As Integer = 0
     Public cameraFailureResolved As Boolean = False
     Public breakInResolved As Boolean = False
     Public colisionResolved As Boolean = False
@@ -133,6 +134,24 @@
                 '    Me.colisionResolved = True
                 '    Me.Timer1.Stop()
             End If
+        End If
+    End Sub
+
+    Private Sub kickOutButton_Click(sender As Object, e As EventArgs) Handles kickOutButton.Click
+        RiderForm.CurrentTripControl1.StopTripButton.PerformClick()
+        RiderForm.kickedOutBox.BringToFront()
+        RiderForm.kickedOutBox.Show()
+        Me.Timer2.Start()
+        ' GIVE POP UP TO RIDER INFORMING THEY HAVE BEEN KICKED OUT
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        Me.kickOutTimer += 1
+        If Me.kickOutTimer >= 6 Then
+            RiderForm.kickedOutBox.SendToBack()
+            RiderForm.kickedOutBox.Hide()
+            Me.kickOutTimer = 0
+            Me.Timer2.Stop()
         End If
     End Sub
 End Class

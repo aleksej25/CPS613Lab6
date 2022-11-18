@@ -30,6 +30,8 @@ Partial Class OwnerMainScreen
         Me.BookATripButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.inUseLabel = New System.Windows.Forms.Label()
+        Me.kickOutButton = New System.Windows.Forms.Button()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,7 +47,7 @@ Partial Class OwnerMainScreen
         'MyCarButton
         '
         Me.MyCarButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.MyCarButton.Location = New System.Drawing.Point(103, 371)
+        Me.MyCarButton.Location = New System.Drawing.Point(103, 429)
         Me.MyCarButton.Name = "MyCarButton"
         Me.MyCarButton.Size = New System.Drawing.Size(134, 42)
         Me.MyCarButton.TabIndex = 3
@@ -55,7 +57,7 @@ Partial Class OwnerMainScreen
         'ScheduleButton
         '
         Me.ScheduleButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ScheduleButton.Location = New System.Drawing.Point(103, 426)
+        Me.ScheduleButton.Location = New System.Drawing.Point(103, 481)
         Me.ScheduleButton.Name = "ScheduleButton"
         Me.ScheduleButton.Size = New System.Drawing.Size(134, 42)
         Me.ScheduleButton.TabIndex = 5
@@ -65,7 +67,7 @@ Partial Class OwnerMainScreen
         'RatingsButton
         '
         Me.RatingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RatingsButton.Location = New System.Drawing.Point(103, 531)
+        Me.RatingsButton.Location = New System.Drawing.Point(103, 534)
         Me.RatingsButton.Name = "RatingsButton"
         Me.RatingsButton.Size = New System.Drawing.Size(134, 42)
         Me.RatingsButton.TabIndex = 6
@@ -76,11 +78,11 @@ Partial Class OwnerMainScreen
         '
         Me.BookATripButton.Font = New System.Drawing.Font("Sitka Text", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.BookATripButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BookATripButton.Location = New System.Drawing.Point(103, 479)
+        Me.BookATripButton.Location = New System.Drawing.Point(103, 377)
         Me.BookATripButton.Name = "BookATripButton"
         Me.BookATripButton.Size = New System.Drawing.Size(134, 42)
         Me.BookATripButton.TabIndex = 7
-        Me.BookATripButton.Text = "Drive your Car"
+        Me.BookATripButton.Text = "Drive Your Car"
         Me.BookATripButton.UseVisualStyleBackColor = True
         '
         'Timer1
@@ -99,11 +101,28 @@ Partial Class OwnerMainScreen
         Me.inUseLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.inUseLabel.Visible = False
         '
+        'kickOutButton
+        '
+        Me.kickOutButton.Font = New System.Drawing.Font("Sitka Text", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.kickOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.kickOutButton.Location = New System.Drawing.Point(103, 326)
+        Me.kickOutButton.Name = "kickOutButton"
+        Me.kickOutButton.Size = New System.Drawing.Size(134, 42)
+        Me.kickOutButton.TabIndex = 9
+        Me.kickOutButton.Text = "Kick Out Rider"
+        Me.kickOutButton.UseVisualStyleBackColor = True
+        Me.kickOutButton.Visible = False
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 1000
+        '
         'OwnerMainScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.kickOutButton)
         Me.Controls.Add(Me.inUseLabel)
         Me.Controls.Add(Me.BookATripButton)
         Me.Controls.Add(Me.RatingsButton)
@@ -125,4 +144,6 @@ Partial Class OwnerMainScreen
     Friend WithEvents BookATripButton As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents inUseLabel As Label
+    Friend WithEvents kickOutButton As Button
+    Friend WithEvents Timer2 As Timer
 End Class

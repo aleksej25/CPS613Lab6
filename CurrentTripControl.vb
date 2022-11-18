@@ -25,8 +25,12 @@
         RiderForm.RiderMainScreen1.BringToFront()
         RiderForm.RiderMainScreen1.Show()
         RiderForm.riderBooking.Reset()
+
         RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
+
+        Form1.OwnerMainScreen1.kickOutButton.Hide()
+
         Me.ArrivedLabel.Hide()
         Form1.OwnerMainScreen1.inUseLabel.Hide()
         Form1.OwnerMainScreen1.BookATripButton.Enabled = True

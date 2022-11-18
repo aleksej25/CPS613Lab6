@@ -39,6 +39,8 @@
         Form1.OwnerMainScreen1.BringToFront()
         Form1.OwnerMainScreen1.Show()
         Form1.OwnerMainScreen1.Timer1.Start()
+
+        RiderForm.RiderMainScreen1.resetAfterRide()
         Form1.OwnerMainScreen1.resetAfterRider()
 
     End Sub

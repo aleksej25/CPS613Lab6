@@ -34,6 +34,8 @@ Partial Class RiderForm
         Me.RiderClimateControl1 = New RentECar.riderClimateControl()
         Me.RiderAirControl1 = New RentECar.riderAirControl()
         Me.RiderCameraViewControl1 = New RentECar.riderCameraViewControl()
+        Me.kickedOutBox = New System.Windows.Forms.PictureBox()
+        CType(Me.kickedOutBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BookTripScreen1
@@ -132,6 +134,16 @@ Partial Class RiderForm
         Me.RiderCameraViewControl1.Size = New System.Drawing.Size(338, 646)
         Me.RiderCameraViewControl1.TabIndex = 19
         '
+        'kickedOutBox
+        '
+        Me.kickedOutBox.Image = Global.RentECar.My.Resources.ProjectResources.kickOutPopup
+        Me.kickedOutBox.Location = New System.Drawing.Point(21, 53)
+        Me.kickedOutBox.Name = "kickedOutBox"
+        Me.kickedOutBox.Size = New System.Drawing.Size(285, 120)
+        Me.kickedOutBox.TabIndex = 20
+        Me.kickedOutBox.TabStop = False
+        Me.kickedOutBox.Visible = False
+        '
         'RiderForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -150,10 +162,12 @@ Partial Class RiderForm
         Me.Controls.Add(Me.RiderClimateControl1)
         Me.Controls.Add(Me.RiderAirControl1)
         Me.Controls.Add(Me.RiderCameraViewControl1)
+        Me.Controls.Add(Me.kickedOutBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "RiderForm"
         Me.Text = "Rider View"
+        CType(Me.kickedOutBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -169,4 +183,5 @@ Partial Class RiderForm
     Friend WithEvents RiderClimateControl1 As riderClimateControl
     Friend WithEvents RiderAirControl1 As riderAirControl
     Friend WithEvents RiderCameraViewControl1 As riderCameraViewControl
+    Friend WithEvents kickedOutBox As PictureBox
 End Class

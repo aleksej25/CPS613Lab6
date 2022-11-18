@@ -248,7 +248,6 @@ Partial Class Form1
         Me.Controls.Add(Me.rideupdated)
         Me.Controls.Add(Me.riderequestn)
         Me.Controls.Add(Me.collisionBox)
-        Me.Controls.Add(Me.cameraFailureBox)
         Me.Controls.Add(Me.breakInBox)
         Me.Controls.Add(Me.ErrorFixScreenControl1)
         Me.Controls.Add(Me.OwnerMainScreen1)
@@ -266,6 +265,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Tripedit1)
         Me.Controls.Add(Me.OwnerBookTrip1)
         Me.Controls.Add(Me.OwnerCurrentTrip1)
+        Me.Controls.Add(Me.cameraFailureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
