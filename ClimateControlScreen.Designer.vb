@@ -67,7 +67,7 @@ Partial Class ClimateControlScreen
         Me.FrontDefrostLabel.AutoSize = True
         Me.FrontDefrostLabel.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FrontDefrostLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.FrontDefrostLabel.Location = New System.Drawing.Point(74, 321)
+        Me.FrontDefrostLabel.Location = New System.Drawing.Point(73, 207)
         Me.FrontDefrostLabel.Name = "FrontDefrostLabel"
         Me.FrontDefrostLabel.Size = New System.Drawing.Size(55, 24)
         Me.FrontDefrostLabel.TabIndex = 8
@@ -78,7 +78,7 @@ Partial Class ClimateControlScreen
         Me.RearDefrostLabel.AutoSize = True
         Me.RearDefrostLabel.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RearDefrostLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.RearDefrostLabel.Location = New System.Drawing.Point(211, 323)
+        Me.RearDefrostLabel.Location = New System.Drawing.Point(213, 207)
         Me.RearDefrostLabel.Name = "RearDefrostLabel"
         Me.RearDefrostLabel.Size = New System.Drawing.Size(47, 24)
         Me.RearDefrostLabel.TabIndex = 9
@@ -161,7 +161,7 @@ Partial Class ClimateControlScreen
         '
         Me.rearDefrost.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.rearDefrost.Image = Global.RentECar.My.Resources.ProjectResources.rearDefrost
-        Me.rearDefrost.Location = New System.Drawing.Point(176, 221)
+        Me.rearDefrost.Location = New System.Drawing.Point(180, 228)
         Me.rearDefrost.Name = "rearDefrost"
         Me.rearDefrost.Size = New System.Drawing.Size(115, 105)
         Me.rearDefrost.TabIndex = 30
