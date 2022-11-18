@@ -36,6 +36,8 @@ Partial Class AirControllScreen
         Me.AirControlLabel = New System.Windows.Forms.Label()
         Me.FreshAirBox = New System.Windows.Forms.Button()
         Me.RecirculatingAirBox = New System.Windows.Forms.Button()
+        Me.freshAirLabel = New System.Windows.Forms.Label()
+        Me.recirAirLabel = New System.Windows.Forms.Label()
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -186,11 +188,35 @@ Partial Class AirControllScreen
         Me.RecirculatingAirBox.TabIndex = 29
         Me.RecirculatingAirBox.UseVisualStyleBackColor = False
         '
+        'freshAirLabel
+        '
+        Me.freshAirLabel.AutoSize = True
+        Me.freshAirLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.freshAirLabel.ForeColor = System.Drawing.Color.Lime
+        Me.freshAirLabel.Location = New System.Drawing.Point(45, 560)
+        Me.freshAirLabel.Name = "freshAirLabel"
+        Me.freshAirLabel.Size = New System.Drawing.Size(102, 23)
+        Me.freshAirLabel.TabIndex = 30
+        Me.freshAirLabel.Text = "Outside Air"
+        '
+        'recirAirLabel
+        '
+        Me.recirAirLabel.AutoSize = True
+        Me.recirAirLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.recirAirLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.recirAirLabel.Location = New System.Drawing.Point(165, 560)
+        Me.recirAirLabel.Name = "recirAirLabel"
+        Me.recirAirLabel.Size = New System.Drawing.Size(131, 23)
+        Me.recirAirLabel.TabIndex = 31
+        Me.recirAirLabel.Text = "Recirculate Air"
+        '
         'AirControllScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.recirAirLabel)
+        Me.Controls.Add(Me.freshAirLabel)
         Me.Controls.Add(Me.RecirculatingAirBox)
         Me.Controls.Add(Me.FreshAirBox)
         Me.Controls.Add(Me.AirControlLabel)
@@ -230,4 +256,6 @@ Partial Class AirControllScreen
     Friend WithEvents AirControlLabel As Label
     Friend WithEvents FreshAirBox As Button
     Friend WithEvents RecirculatingAirBox As Button
+    Friend WithEvents freshAirLabel As Label
+    Friend WithEvents recirAirLabel As Label
 End Class

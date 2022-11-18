@@ -6,6 +6,7 @@
         RiderForm.RiderAirControl1.SettingClimateLabel.Hide()
         RiderForm.RiderAirControl1.AirControlLabel.Hide()
         RiderForm.RiderAirControl1.FanSpeedBar.Value = 0
+        RiderForm.RiderAirControl1.FreshAirBox.PerformClick()
 
         'Rider Climate Control Screen'
         If RiderForm.RiderClimateControl1.driverSeatOn Then
@@ -108,5 +109,6 @@
         RiderForm.CurrentTripControl1.BringToFront()
         RiderForm.CurrentTripControl1.Show()
     End Sub
+
 
 End Class

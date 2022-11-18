@@ -25,10 +25,14 @@
         Select Case sender.Name
             Case "FreshAirBox"
                 Me.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOn
+                Me.freshAirLabel.ForeColor = Color.LimeGreen
                 Me.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOff
+                Me.recirAirLabel.ForeColor = Color.White
             Case "RecirculatingAirBox"
                 Me.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOff
+                Me.recirAirLabel.ForeColor = Color.LimeGreen
                 Me.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOn
+                Me.freshAirLabel.ForeColor = Color.White
         End Select
     End Sub
 

@@ -35,16 +35,18 @@
         Select Case sender.Name
             Case "FreshAirBox"
                 Me.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOn
+                Me.freshAirLabel.ForeColor = Color.LimeGreen
                 Me.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOff
+                Me.recirAirLabel.ForeColor = Color.White
 
-                Form1.AirControllScreen1.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOn
-                Form1.AirControllScreen1.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOff
+                Form1.AirControllScreen1.FreshAirBox.PerformClick()
             Case "RecirculatingAirBox"
                 Me.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOff
+                Me.recirAirLabel.ForeColor = Color.LimeGreen
                 Me.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOn
+                Me.freshAirLabel.ForeColor = Color.White
 
-                Form1.AirControllScreen1.FreshAirBox.Image = My.Resources.ProjectResources.freshAirOff
-                Form1.AirControllScreen1.RecirculatingAirBox.Image = My.Resources.ProjectResources.recirculatAirOn
+                Form1.AirControllScreen1.RecirculatingAirBox.PerformClick()
         End Select
     End Sub
 

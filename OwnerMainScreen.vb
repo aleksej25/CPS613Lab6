@@ -12,6 +12,7 @@
         Form1.AirControllScreen1.SettingClimateLabel.Hide()
         Form1.AirControllScreen1.AirControlLabel.Hide()
         Form1.AirControllScreen1.FanSpeedBar.Value = 0
+        Form1.AirControllScreen1.FreshAirBox.PerformClick()
 
         'Owner Climate Control Screen'
         If Form1.ClimateControlScreen1.driverSeatOn Then
@@ -154,4 +155,5 @@
             Me.Timer2.Stop()
         End If
     End Sub
+
 End Class
