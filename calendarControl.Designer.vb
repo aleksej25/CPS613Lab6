@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class calendarControl
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,10 @@ Partial Class calendarControl
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.backButton = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -95,6 +96,7 @@ Partial Class calendarControl
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label81 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -111,9 +113,6 @@ Partial Class calendarControl
         Me.Label85 = New System.Windows.Forms.Label()
         Me.Label86 = New System.Windows.Forms.Label()
         Me.Label87 = New System.Windows.Forms.Label()
-        Me.deleteModeLabel = New System.Windows.Forms.Label()
-        Me.removeButton = New System.Windows.Forms.Button()
-        Me.addButton = New System.Windows.Forms.Button()
         CType(Me.backButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -127,6 +126,19 @@ Partial Class calendarControl
         Me.backButton.Size = New System.Drawing.Size(47, 41)
         Me.backButton.TabIndex = 12
         Me.backButton.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button1.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button1.Location = New System.Drawing.Point(62, 540)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(82, 37)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "+"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -711,6 +723,19 @@ Partial Class calendarControl
         Me.Label81.Size = New System.Drawing.Size(26, 35)
         Me.Label81.TabIndex = 93
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Button2.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button2.Location = New System.Drawing.Point(167, 540)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(82, 37)
+        Me.Button2.TabIndex = 100
+        Me.Button2.Text = "-"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.SystemColors.ControlDarkDark
@@ -912,51 +937,10 @@ Partial Class calendarControl
         Me.Label87.TabIndex = 116
         Me.Label87.Text = "Fri"
         '
-        'deleteModeLabel
-        '
-        Me.deleteModeLabel.AutoSize = True
-        Me.deleteModeLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.deleteModeLabel.Font = New System.Drawing.Font("Sitka Small", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.deleteModeLabel.ForeColor = System.Drawing.Color.Red
-        Me.deleteModeLabel.Location = New System.Drawing.Point(108, 55)
-        Me.deleteModeLabel.Name = "deleteModeLabel"
-        Me.deleteModeLabel.Size = New System.Drawing.Size(132, 28)
-        Me.deleteModeLabel.TabIndex = 117
-        Me.deleteModeLabel.Text = "Delete Mode"
-        Me.deleteModeLabel.Visible = False
-        '
-        'removeButton
-        '
-        Me.removeButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.removeButton.Font = New System.Drawing.Font("Sitka Small", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.removeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.removeButton.Image = Global.RentECar.My.Resources.ProjectResources.smallMinus
-        Me.removeButton.Location = New System.Drawing.Point(175, 520)
-        Me.removeButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.removeButton.Name = "removeButton"
-        Me.removeButton.Size = New System.Drawing.Size(65, 65)
-        Me.removeButton.TabIndex = 100
-        Me.removeButton.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.removeButton.UseVisualStyleBackColor = False
-        '
-        'addButton
-        '
-        Me.addButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.addButton.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.addButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.addButton.Image = Global.RentECar.My.Resources.ProjectResources.smallPlus
-        Me.addButton.Location = New System.Drawing.Point(96, 520)
-        Me.addButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.addButton.Name = "addButton"
-        Me.addButton.Size = New System.Drawing.Size(65, 65)
-        Me.addButton.TabIndex = 13
-        Me.addButton.UseVisualStyleBackColor = False
-        '
         'calendarControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.deleteModeLabel)
         Me.Controls.Add(Me.Label87)
         Me.Controls.Add(Me.Label86)
         Me.Controls.Add(Me.Label85)
@@ -973,7 +957,7 @@ Partial Class calendarControl
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.removeButton)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label75)
         Me.Controls.Add(Me.Label76)
         Me.Controls.Add(Me.Label77)
@@ -1045,7 +1029,7 @@ Partial Class calendarControl
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.addButton)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -1059,6 +1043,7 @@ Partial Class calendarControl
     End Sub
 
     Friend WithEvents backButton As PictureBox
+    Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -1131,6 +1116,7 @@ Partial Class calendarControl
     Friend WithEvents Label79 As Label
     Friend WithEvents Label80 As Label
     Friend WithEvents Label81 As Label
+    Friend WithEvents Button2 As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
@@ -1147,7 +1133,4 @@ Partial Class calendarControl
     Friend WithEvents Label85 As Label
     Friend WithEvents Label86 As Label
     Friend WithEvents Label87 As Label
-    Friend WithEvents deleteModeLabel As Label
-    Friend WithEvents removeButton As Button
-    Friend WithEvents addButton As Button
 End Class
