@@ -1,13 +1,21 @@
 ﻿Public Class calendarControl
 
+    Public Shared saturday = New Label() {Form1.CalendarControl1.Label3, Form1.CalendarControl1.Label25, Form1.CalendarControl1.Label32, Form1.CalendarControl1.Label39, Form1.CalendarControl1.Label46, Form1.CalendarControl1.Label53, Form1.CalendarControl1.Label60, Form1.CalendarControl1.Label67, Form1.CalendarControl1.Label74, Form1.CalendarControl1.Label81}
+    Public Shared sunday = New Label() {Form1.CalendarControl1.Label2, Form1.CalendarControl1.Label24, Form1.CalendarControl1.Label31, Form1.CalendarControl1.Label38, Form1.CalendarControl1.Label45, Form1.CalendarControl1.Label52, Form1.CalendarControl1.Label59, Form1.CalendarControl1.Label66, Form1.CalendarControl1.Label73, Form1.CalendarControl1.Label80}
+    Public Shared monday = New Label() {Form1.CalendarControl1.Label4, Form1.CalendarControl1.Label23, Form1.CalendarControl1.Label30, Form1.CalendarControl1.Label37, Form1.CalendarControl1.Label44, Form1.CalendarControl1.Label51, Form1.CalendarControl1.Label58, Form1.CalendarControl1.Label65, Form1.CalendarControl1.Label72, Form1.CalendarControl1.Label79}
+    Public Shared tuesday = New Label() {Form1.CalendarControl1.Label5, Form1.CalendarControl1.Label22, Form1.CalendarControl1.Label29, Form1.CalendarControl1.Label36, Form1.CalendarControl1.Label43, Form1.CalendarControl1.Label50, Form1.CalendarControl1.Label57, Form1.CalendarControl1.Label64, Form1.CalendarControl1.Label71, Form1.CalendarControl1.Label78}
+    Public Shared wednesday = New Label() {Form1.CalendarControl1.Label6, Form1.CalendarControl1.Label21, Form1.CalendarControl1.Label28, Form1.CalendarControl1.Label35, Form1.CalendarControl1.Label42, Form1.CalendarControl1.Label49, Form1.CalendarControl1.Label56, Form1.CalendarControl1.Label63, Form1.CalendarControl1.Label70, Form1.CalendarControl1.Label77}
+    Public Shared thursday = New Label() {Form1.CalendarControl1.Label7, Form1.CalendarControl1.Label20, Form1.CalendarControl1.Label27, Form1.CalendarControl1.Label34, Form1.CalendarControl1.Label41, Form1.CalendarControl1.Label48, Form1.CalendarControl1.Label55, Form1.CalendarControl1.Label62, Form1.CalendarControl1.Label69, Form1.CalendarControl1.Label76}
+    Public Shared friday = New Label() {Form1.CalendarControl1.Label18, Form1.CalendarControl1.Label19, Form1.CalendarControl1.Label26, Form1.CalendarControl1.Label33, Form1.CalendarControl1.Label40, Form1.CalendarControl1.Label47, Form1.CalendarControl1.Label54, Form1.CalendarControl1.Label61, Form1.CalendarControl1.Label68, Form1.CalendarControl1.Label75}
+
+
     Dim negativeClicked As Boolean = False
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles backButton.Click
         Me.Hide()
-        Form1.OwnerMainScreen1.BringToFront()
         Form1.OwnerMainScreen1.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles addButton.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Form1.SchedulerControl1.BringToFront()
         Form1.SchedulerControl1.Show()
@@ -2356,7 +2364,7 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles removeButton.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Dim counter As Integer = 0
 
@@ -2370,24 +2378,22 @@
         Next
 
         If counter = 0 And negativeClicked = False Then
-            MessageBox.Show("Error. Nothing to Remove.", "Information", MessageBoxButtons.OK)
+            MessageBox.Show("Not possible", "Information", MessageBoxButtons.OKCancel)
             Exit Sub
         End If
 
         If counter = 0 And negativeClicked = True Then
-            Me.addButton.Show()
+
+            Button1.Show()
+
         End If
 
         If negativeClicked = False Then
             negativeClicked = True
-            Me.deleteModeLabel.Show()
-            Me.removeButton.Image = My.Resources.ProjectResources.smallMinusOn
-            Me.addButton.Hide()
+            Button1.Hide()
         ElseIf negativeClicked = True Then
-            Me.removeButton.Image = My.Resources.ProjectResources.smallMinus
             negativeClicked = False
-            Me.addButton.Show()
-            Me.deleteModeLabel.Hide()
+            Button1.Show()
         End If
 
     End Sub

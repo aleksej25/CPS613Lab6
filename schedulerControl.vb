@@ -3,9 +3,18 @@ Imports System.Windows.Forms.LinkLabel
 
 Public Class schedulerControl
 
+    ' Dim saturday_label = New Label() {Form1.CalendarControl1.Label3, Form1.CalendarControl1.Label25, Form1.CalendarControl1.Label32, Form1.CalendarControl1.Label39, Form1.CalendarControl1.Label46, Form1.CalendarControl1.Label53, Form1.CalendarControl1.Label60, Form1.CalendarControl1.Label67, Form1.CalendarControl1.Label74, Form1.CalendarControl1.Label81}
+    '  Dim sunday = New Label() {Form1.CalendarControl1.Label2, Form1.CalendarControl1.Label24, Form1.CalendarControl1.Label31, Form1.CalendarControl1.Label38, Form1.CalendarControl1.Label45, Form1.CalendarControl1.Label52, Form1.CalendarControl1.Label59, Form1.CalendarControl1.Label66, Form1.CalendarControl1.Label73, Form1.CalendarControl1.Label80}
+    ' Dim monday = New Label() {Form1.CalendarControl1.Label4, Form1.CalendarControl1.Label23, Form1.CalendarControl1.Label30, Form1.CalendarControl1.Label37, Form1.CalendarControl1.Label44, Form1.CalendarControl1.Label51, Form1.CalendarControl1.Label58, Form1.CalendarControl1.Label65, Form1.CalendarControl1.Label72, Form1.CalendarControl1.Label79}
+    'Dim tuesday = New Label() {Form1.CalendarControl1.Label5, Form1.CalendarControl1.Label22, Form1.CalendarControl1.Label29, Form1.CalendarControl1.Label36, Form1.CalendarControl1.Label43, Form1.CalendarControl1.Label50, Form1.CalendarControl1.Label57, Form1.CalendarControl1.Label64, Form1.CalendarControl1.Label71, Form1.CalendarControl1.Label78}
+    'Dim wednesday = New Label() {Form1.CalendarControl1.Label6, Form1.CalendarControl1.Label21, Form1.CalendarControl1.Label28, Form1.CalendarControl1.Label35, Form1.CalendarControl1.Label42, Form1.CalendarControl1.Label49, Form1.CalendarControl1.Label56, Form1.CalendarControl1.Label63, Form1.CalendarControl1.Label70, Form1.CalendarControl1.Label77}
+    'Dim thursday = New Label() {Form1.CalendarControl1.Label7, Form1.CalendarControl1.Label20, Form1.CalendarControl1.Label27, Form1.CalendarControl1.Label34, Form1.CalendarControl1.Label41, Form1.CalendarControl1.Label48, Form1.CalendarControl1.Label55, Form1.CalendarControl1.Label62, Form1.CalendarControl1.Label69, Form1.CalendarControl1.Label76}
+    'Dim friday = New Label() {Form1.CalendarControl1.Label18, Form1.CalendarControl1.Label19, Form1.CalendarControl1.Label26, Form1.CalendarControl1.Label33, Form1.CalendarControl1.Label40, Form1.CalendarControl1.Label47, Form1.CalendarControl1.Label54, Form1.CalendarControl1.Label61, Form1.CalendarControl1.Label68, Form1.CalendarControl1.Label75}
+
+
+
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles backButton.Click
         Me.Hide()
-        Form1.CalendarControl1.BringToFront()
         Form1.CalendarControl1.Show()
     End Sub
 
@@ -24,536 +33,143 @@ Public Class schedulerControl
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Me.validData Then
-            If sundayButton.Checked = True Then
 
+            Dim hours_string As String = ""
+            Dim hours_int As Integer = 0
+            Dim time_string As String = ""
+            Dim time_int As Integer = 0
+            For Each radio_buttons As RadioButton In Me.GroupBox2.Controls
 
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label2.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label2.Text = activityTextBox.Text
+                If radio_buttons.Checked = True Then
 
-
-                End If
-
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label24.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label24.Text = activityTextBox.Text
-
+                    hours_string = radio_buttons.Text
 
                 End If
 
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label31.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label31.Text = activityTextBox.Text
+            Next
 
+            If hours_string <> "" Then
 
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label38.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label38.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label45.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label45.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label52.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label52.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label59.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label59.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label66.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label66.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label73.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label73.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label80.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label80.Text = activityTextBox.Text
-
-
-                End If
+                hours_int = CStr(hours_string)
 
             End If
 
-            If mondayButton.Checked = True Then
+            For Each radio_buttons2 As RadioButton In Me.GroupBox3.Controls
 
+                If radio_buttons2.Checked = True Then
 
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label4.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label4.Text = activityTextBox.Text
-
-
+                    time_string = radio_buttons2.Text
+                    time_int = CStr(time_string)
                 End If
 
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label23.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label23.Text = activityTextBox.Text
+            Next
 
+            Dim difference As Integer = time_int + hours_int - 1
 
-                End If
-
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label30.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label30.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label37.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label37.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label44.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label44.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label51.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label51.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label58.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label58.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label65.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label65.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label72.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label72.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label79.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label79.Text = activityTextBox.Text
-
-
-                End If
-
+            If (difference > 10) Then
+                difference = 10
             End If
-
-            If tuesdayButton.Checked = True Then
-
-
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label5.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label5.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label22.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label22.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label29.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label29.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label36.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label36.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label43.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label43.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label50.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label50.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label57.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label57.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label64.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label64.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label71.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label71.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label78.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label78.Text = activityTextBox.Text
-
-
-                End If
-
-            End If
-
-            If wednesdayButton.Checked = True Then
-
-
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label6.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label6.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label21.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label21.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label28.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label28.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label35.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label35.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label42.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label42.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label49.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label49.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label56.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label56.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label63.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label63.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label70.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label70.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label77.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label77.Text = activityTextBox.Text
-
-
-                End If
-
-            End If
-
-            If thursdayButton.Checked = True Then
-
-
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label7.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label7.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label20.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label20.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label27.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label27.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label34.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label34.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label41.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label41.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label48.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label48.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label55.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label55.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label62.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label62.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label69.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label69.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label76.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label76.Text = activityTextBox.Text
-
-
-                End If
-
-            End If
-
-            If fridayButton.Checked = True Then
-
-
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label18.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label18.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label19.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label19.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label26.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label26.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label33.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label33.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label40.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label40.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label47.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label47.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label54.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label54.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label61.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label61.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label68.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label68.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label75.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label75.Text = activityTextBox.Text
-
-
-                End If
-
-            End If
-
-
             If saturdayButton.Checked = True Then
 
+                    For current_time As Integer = time_int - 1 To difference - 1
 
-                If RadioButton8.Checked = True Then
-                    Form1.CalendarControl1.Label3.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label3.Text = activityTextBox.Text
+                        Form1.CalendarControl1.saturday(current_time).BackColor = Color.Blue
 
 
-                End If
 
-                If RadioButton9.Checked = True Then
-                    Form1.CalendarControl1.Label25.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label25.Text = activityTextBox.Text
+                    Next
 
 
                 End If
 
-                If RadioButton10.Checked = True Then
-                    Form1.CalendarControl1.Label32.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label32.Text = activityTextBox.Text
+                If sundayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.sunday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton11.Checked = True Then
-                    Form1.CalendarControl1.Label39.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label39.Text = activityTextBox.Text
+                If mondayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.monday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton12.Checked = True Then
-                    Form1.CalendarControl1.Label46.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label46.Text = activityTextBox.Text
+                If tuesdayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.tuesday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton13.Checked = True Then
-                    Form1.CalendarControl1.Label53.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label53.Text = activityTextBox.Text
+                If wednesdayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.wednesday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton14.Checked = True Then
-                    Form1.CalendarControl1.Label60.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label60.Text = activityTextBox.Text
+                If thursdayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.thursday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton15.Checked = True Then
-                    Form1.CalendarControl1.Label67.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label67.Text = activityTextBox.Text
+                If fridayButton.Checked = True Then
+
+                    For current_time As Integer = time_int - 1 To difference - 1
+
+                        Form1.CalendarControl1.friday(current_time).BackColor = Color.Blue
+
+
+
+                    Next
 
 
                 End If
 
-                If RadioButton16.Checked = True Then
-                    Form1.CalendarControl1.Label74.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label74.Text = activityTextBox.Text
-
-
-                End If
-
-                If RadioButton17.Checked = True Then
-                    Form1.CalendarControl1.Label81.BackColor = Color.Blue
-                    Form1.CalendarControl1.Label81.Text = activityTextBox.Text
-
-
-                End If
-
+                Me.activityTextBox.Text = ""
+                Me.locationTextBox.Text = ""
+                Me.Hide()
+                Form1.CalendarControl1.Show()
             End If
-            Me.activityTextBox.Text = ""
-            Me.locationTextBox.Text = ""
-            Me.Hide()
-            Form1.CalendarControl1.BringToFront()
-            Form1.CalendarControl1.Show()
-        End If
+
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
     End Sub
 End Class
