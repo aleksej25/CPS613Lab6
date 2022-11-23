@@ -41,14 +41,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
 
@@ -75,14 +75,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -107,7 +107,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -132,7 +132,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -157,7 +157,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -182,7 +182,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -207,7 +207,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -232,7 +232,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -259,14 +259,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -292,14 +292,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -325,14 +325,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -358,14 +358,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -391,14 +391,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -431,7 +431,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -457,14 +457,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -489,14 +489,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -522,14 +522,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -554,14 +554,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -586,14 +586,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -619,14 +619,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -651,14 +651,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -683,14 +683,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -715,14 +715,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -747,14 +747,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -779,14 +779,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -811,14 +811,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -843,14 +843,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -875,14 +875,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -907,14 +907,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -939,14 +939,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -971,14 +971,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
 
@@ -1004,14 +1004,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1036,14 +1036,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1068,14 +1068,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1100,14 +1100,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1134,14 +1134,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1166,14 +1166,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1198,14 +1198,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1230,14 +1230,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1262,14 +1262,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1295,14 +1295,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1327,14 +1327,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1359,14 +1359,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1391,14 +1391,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1423,14 +1423,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1455,14 +1455,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1487,14 +1487,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1519,14 +1519,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1551,14 +1551,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1583,14 +1583,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1615,14 +1615,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1647,14 +1647,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1679,14 +1679,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1712,14 +1712,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1744,14 +1744,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1776,14 +1776,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1808,14 +1808,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1840,14 +1840,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1872,14 +1872,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1904,14 +1904,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1936,14 +1936,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -1968,14 +1968,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2000,14 +2000,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2032,14 +2032,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2064,14 +2064,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2096,14 +2096,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2128,14 +2128,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2160,14 +2160,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2192,14 +2192,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2224,14 +2224,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2256,14 +2256,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2288,14 +2288,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2320,14 +2320,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2352,14 +2352,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
     End Sub
@@ -2417,14 +2417,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
 
         End If
 
@@ -2450,14 +2450,14 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
+            String1 = Form1.SchedulerControl1.ActivityText + " " + Form1.SchedulerControl1.RadiusText
             String2 = String1.Split(" ")
 
             line1 = String2(0)
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Location: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
         End If
 
     End Sub

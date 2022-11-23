@@ -132,12 +132,13 @@ Partial Class calendarControl
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Button1.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(62, 540)
+        Me.Button1.Location = New System.Drawing.Point(62, 531)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(82, 37)
+        Me.Button1.Size = New System.Drawing.Size(82, 46)
         Me.Button1.TabIndex = 13
         Me.Button1.Text = "+"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
@@ -160,6 +161,7 @@ Partial Class calendarControl
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(26, 35)
         Me.Label3.TabIndex = 16
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
         '
@@ -168,6 +170,7 @@ Partial Class calendarControl
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(26, 35)
         Me.Label2.TabIndex = 31
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
@@ -176,6 +179,7 @@ Partial Class calendarControl
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(26, 35)
         Me.Label4.TabIndex = 32
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
@@ -184,6 +188,7 @@ Partial Class calendarControl
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(26, 35)
         Me.Label5.TabIndex = 33
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '
@@ -192,6 +197,7 @@ Partial Class calendarControl
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(26, 35)
         Me.Label6.TabIndex = 34
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
@@ -200,6 +206,7 @@ Partial Class calendarControl
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(26, 35)
         Me.Label7.TabIndex = 35
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label18
         '
@@ -208,12 +215,13 @@ Partial Class calendarControl
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(26, 35)
         Me.Label18.TabIndex = 36
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(-3, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(327, 641)
         Me.PictureBox1.TabIndex = 11
@@ -226,6 +234,7 @@ Partial Class calendarControl
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(26, 35)
         Me.Label19.TabIndex = 43
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label20
         '
@@ -234,6 +243,7 @@ Partial Class calendarControl
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(26, 35)
         Me.Label20.TabIndex = 42
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label21
         '
@@ -242,14 +252,16 @@ Partial Class calendarControl
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(26, 35)
         Me.Label21.TabIndex = 41
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label22
         '
-        Me.Label22.BackColor = System.Drawing.SystemColors.Control
+        Me.Label22.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label22.Location = New System.Drawing.Point(166, 155)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(26, 35)
         Me.Label22.TabIndex = 40
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label23
         '
@@ -258,6 +270,7 @@ Partial Class calendarControl
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(26, 35)
         Me.Label23.TabIndex = 39
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label24
         '
@@ -266,6 +279,7 @@ Partial Class calendarControl
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(26, 35)
         Me.Label24.TabIndex = 38
+        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label25
         '
@@ -274,6 +288,7 @@ Partial Class calendarControl
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(26, 35)
         Me.Label25.TabIndex = 37
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label26
         '
@@ -282,6 +297,7 @@ Partial Class calendarControl
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(26, 35)
         Me.Label26.TabIndex = 50
+        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label27
         '
@@ -290,6 +306,7 @@ Partial Class calendarControl
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(26, 35)
         Me.Label27.TabIndex = 49
+        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label28
         '
@@ -298,6 +315,7 @@ Partial Class calendarControl
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(26, 35)
         Me.Label28.TabIndex = 48
+        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label29
         '
@@ -306,6 +324,7 @@ Partial Class calendarControl
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(26, 35)
         Me.Label29.TabIndex = 47
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label30
         '
@@ -314,6 +333,7 @@ Partial Class calendarControl
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(26, 35)
         Me.Label30.TabIndex = 46
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label31
         '
@@ -322,6 +342,7 @@ Partial Class calendarControl
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(26, 35)
         Me.Label31.TabIndex = 45
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label32
         '
@@ -330,6 +351,7 @@ Partial Class calendarControl
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(26, 35)
         Me.Label32.TabIndex = 44
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label33
         '
@@ -338,6 +360,7 @@ Partial Class calendarControl
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(26, 35)
         Me.Label33.TabIndex = 57
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label34
         '
@@ -346,6 +369,7 @@ Partial Class calendarControl
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(26, 35)
         Me.Label34.TabIndex = 56
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label35
         '
@@ -354,6 +378,7 @@ Partial Class calendarControl
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(26, 35)
         Me.Label35.TabIndex = 55
+        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label36
         '
@@ -362,6 +387,7 @@ Partial Class calendarControl
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(26, 35)
         Me.Label36.TabIndex = 54
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label37
         '
@@ -370,6 +396,7 @@ Partial Class calendarControl
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(26, 35)
         Me.Label37.TabIndex = 53
+        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label38
         '
@@ -378,6 +405,7 @@ Partial Class calendarControl
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(26, 35)
         Me.Label38.TabIndex = 52
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label39
         '
@@ -386,6 +414,7 @@ Partial Class calendarControl
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(26, 35)
         Me.Label39.TabIndex = 51
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label40
         '
@@ -394,6 +423,7 @@ Partial Class calendarControl
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(26, 35)
         Me.Label40.TabIndex = 64
+        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label41
         '
@@ -402,6 +432,7 @@ Partial Class calendarControl
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(26, 35)
         Me.Label41.TabIndex = 63
+        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label42
         '
@@ -410,6 +441,7 @@ Partial Class calendarControl
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(26, 35)
         Me.Label42.TabIndex = 62
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label43
         '
@@ -418,6 +450,7 @@ Partial Class calendarControl
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(26, 35)
         Me.Label43.TabIndex = 61
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label44
         '
@@ -426,6 +459,7 @@ Partial Class calendarControl
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(26, 35)
         Me.Label44.TabIndex = 60
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label45
         '
@@ -434,6 +468,7 @@ Partial Class calendarControl
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(26, 35)
         Me.Label45.TabIndex = 59
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label46
         '
@@ -442,6 +477,7 @@ Partial Class calendarControl
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(26, 35)
         Me.Label46.TabIndex = 58
+        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label47
         '
@@ -450,6 +486,7 @@ Partial Class calendarControl
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(26, 35)
         Me.Label47.TabIndex = 71
+        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label48
         '
@@ -458,6 +495,7 @@ Partial Class calendarControl
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(26, 35)
         Me.Label48.TabIndex = 70
+        Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label49
         '
@@ -466,6 +504,7 @@ Partial Class calendarControl
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(26, 35)
         Me.Label49.TabIndex = 69
+        Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label50
         '
@@ -474,6 +513,7 @@ Partial Class calendarControl
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(26, 35)
         Me.Label50.TabIndex = 68
+        Me.Label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label51
         '
@@ -482,6 +522,7 @@ Partial Class calendarControl
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(26, 35)
         Me.Label51.TabIndex = 67
+        Me.Label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label52
         '
@@ -490,6 +531,7 @@ Partial Class calendarControl
         Me.Label52.Name = "Label52"
         Me.Label52.Size = New System.Drawing.Size(26, 35)
         Me.Label52.TabIndex = 66
+        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label53
         '
@@ -498,6 +540,7 @@ Partial Class calendarControl
         Me.Label53.Name = "Label53"
         Me.Label53.Size = New System.Drawing.Size(26, 35)
         Me.Label53.TabIndex = 65
+        Me.Label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label54
         '
@@ -506,6 +549,7 @@ Partial Class calendarControl
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(26, 35)
         Me.Label54.TabIndex = 78
+        Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label55
         '
@@ -514,6 +558,7 @@ Partial Class calendarControl
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(26, 35)
         Me.Label55.TabIndex = 77
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label56
         '
@@ -522,6 +567,7 @@ Partial Class calendarControl
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(26, 35)
         Me.Label56.TabIndex = 76
+        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label57
         '
@@ -530,6 +576,7 @@ Partial Class calendarControl
         Me.Label57.Name = "Label57"
         Me.Label57.Size = New System.Drawing.Size(26, 35)
         Me.Label57.TabIndex = 75
+        Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label58
         '
@@ -538,6 +585,7 @@ Partial Class calendarControl
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(26, 35)
         Me.Label58.TabIndex = 74
+        Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label59
         '
@@ -546,6 +594,7 @@ Partial Class calendarControl
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(26, 35)
         Me.Label59.TabIndex = 73
+        Me.Label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label60
         '
@@ -554,6 +603,7 @@ Partial Class calendarControl
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(26, 35)
         Me.Label60.TabIndex = 72
+        Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label61
         '
@@ -562,6 +612,7 @@ Partial Class calendarControl
         Me.Label61.Name = "Label61"
         Me.Label61.Size = New System.Drawing.Size(26, 35)
         Me.Label61.TabIndex = 85
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label62
         '
@@ -570,6 +621,7 @@ Partial Class calendarControl
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(26, 35)
         Me.Label62.TabIndex = 84
+        Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label63
         '
@@ -578,6 +630,7 @@ Partial Class calendarControl
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(26, 35)
         Me.Label63.TabIndex = 83
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label64
         '
@@ -586,6 +639,7 @@ Partial Class calendarControl
         Me.Label64.Name = "Label64"
         Me.Label64.Size = New System.Drawing.Size(26, 35)
         Me.Label64.TabIndex = 82
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label65
         '
@@ -594,6 +648,7 @@ Partial Class calendarControl
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(26, 35)
         Me.Label65.TabIndex = 81
+        Me.Label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label66
         '
@@ -602,6 +657,7 @@ Partial Class calendarControl
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(26, 35)
         Me.Label66.TabIndex = 80
+        Me.Label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label67
         '
@@ -610,6 +666,7 @@ Partial Class calendarControl
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(26, 35)
         Me.Label67.TabIndex = 79
+        Me.Label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label68
         '
@@ -618,6 +675,7 @@ Partial Class calendarControl
         Me.Label68.Name = "Label68"
         Me.Label68.Size = New System.Drawing.Size(26, 35)
         Me.Label68.TabIndex = 92
+        Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label69
         '
@@ -626,6 +684,7 @@ Partial Class calendarControl
         Me.Label69.Name = "Label69"
         Me.Label69.Size = New System.Drawing.Size(26, 35)
         Me.Label69.TabIndex = 91
+        Me.Label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label70
         '
@@ -634,6 +693,7 @@ Partial Class calendarControl
         Me.Label70.Name = "Label70"
         Me.Label70.Size = New System.Drawing.Size(26, 35)
         Me.Label70.TabIndex = 90
+        Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label71
         '
@@ -642,6 +702,7 @@ Partial Class calendarControl
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(26, 35)
         Me.Label71.TabIndex = 89
+        Me.Label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label72
         '
@@ -650,6 +711,7 @@ Partial Class calendarControl
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(26, 35)
         Me.Label72.TabIndex = 88
+        Me.Label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label73
         '
@@ -658,6 +720,7 @@ Partial Class calendarControl
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(26, 35)
         Me.Label73.TabIndex = 87
+        Me.Label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label74
         '
@@ -666,6 +729,7 @@ Partial Class calendarControl
         Me.Label74.Name = "Label74"
         Me.Label74.Size = New System.Drawing.Size(26, 35)
         Me.Label74.TabIndex = 86
+        Me.Label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label75
         '
@@ -674,6 +738,7 @@ Partial Class calendarControl
         Me.Label75.Name = "Label75"
         Me.Label75.Size = New System.Drawing.Size(26, 35)
         Me.Label75.TabIndex = 99
+        Me.Label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label76
         '
@@ -682,6 +747,7 @@ Partial Class calendarControl
         Me.Label76.Name = "Label76"
         Me.Label76.Size = New System.Drawing.Size(26, 35)
         Me.Label76.TabIndex = 98
+        Me.Label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label77
         '
@@ -690,6 +756,7 @@ Partial Class calendarControl
         Me.Label77.Name = "Label77"
         Me.Label77.Size = New System.Drawing.Size(26, 35)
         Me.Label77.TabIndex = 97
+        Me.Label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label78
         '
@@ -698,6 +765,7 @@ Partial Class calendarControl
         Me.Label78.Name = "Label78"
         Me.Label78.Size = New System.Drawing.Size(26, 35)
         Me.Label78.TabIndex = 96
+        Me.Label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label79
         '
@@ -706,6 +774,7 @@ Partial Class calendarControl
         Me.Label79.Name = "Label79"
         Me.Label79.Size = New System.Drawing.Size(26, 35)
         Me.Label79.TabIndex = 95
+        Me.Label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label80
         '
@@ -714,6 +783,7 @@ Partial Class calendarControl
         Me.Label80.Name = "Label80"
         Me.Label80.Size = New System.Drawing.Size(26, 35)
         Me.Label80.TabIndex = 94
+        Me.Label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label81
         '
@@ -722,18 +792,20 @@ Partial Class calendarControl
         Me.Label81.Name = "Label81"
         Me.Label81.Size = New System.Drawing.Size(26, 35)
         Me.Label81.TabIndex = 93
+        Me.Label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Button2.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(167, 540)
+        Me.Button2.Location = New System.Drawing.Point(167, 531)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 37)
+        Me.Button2.Size = New System.Drawing.Size(82, 46)
         Me.Button2.TabIndex = 100
-        Me.Button2.Text = "-"
+        Me.Button2.Text = " -"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label8
