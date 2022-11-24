@@ -81,16 +81,7 @@
     End Function
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If Form1.CarBooked = True Then
-            Form1.riderequestn.Show()
-            Form1.riderequestn.BringToFront()
-            Form1.CarBooked = False
-        End If
-        If Booking.TripModified = True Then
-            Form1.rideupdated.Show()
-            Form1.rideupdated.BringToFront()
-            Booking.TripModified = False
-        End If
+
     End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
         Form1.ECarControls.carBox.Enabled = True
@@ -156,4 +147,7 @@
         End If
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

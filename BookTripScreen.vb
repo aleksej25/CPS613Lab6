@@ -53,6 +53,8 @@
         RiderForm.riderBooking.ToLocation = ToLocationBox.Text
         RiderForm.riderBooking.NumberOfPeople = Integer.Parse(PeopleComboBox.Text)
         Form1.CarBooked = True
+        Form1.riderequestn.Show()
+        Form1.riderequestn.BringToFront()
 
         If NowRadioButton.Checked = True Then
             RiderForm.riderBooking.FromTime = "10:00AM"
@@ -76,7 +78,7 @@
 
         Form1.OwnerMainScreen1.kickOutButton.Show()
 
-        Form1.Requestdetails1.tripdetails.Text = "Name: " + RiderForm.riderBooking.RiderName + vbCrLf + "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime + vbCrLf + "End time: " + RiderForm.riderBooking.ToTime
+        Form1.Requestdetails1.tripdetails.Text = "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime
         RiderForm.CurrentTripControl1.Timer.Start()
 
 

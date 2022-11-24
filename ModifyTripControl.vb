@@ -33,6 +33,8 @@
         RiderForm.CurrentTripControl1.ContinueTripButton.Show()
         RiderForm.CurrentTripControl1.NextDestIndicator.Show()
         RiderForm.CurrentTripControl1.ModifiedDestLabel.Show()
+        Form1.rideupdated.Show()
+        Form1.rideupdated.BringToFront()
         Me.Hide()
         RiderForm.CurrentTripControl1.BringToFront()
         RiderForm.CurrentTripControl1.Show()
