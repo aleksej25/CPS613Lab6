@@ -113,6 +113,7 @@ Partial Class calendarControl
         Me.Label85 = New System.Windows.Forms.Label()
         Me.Label86 = New System.Windows.Forms.Label()
         Me.Label87 = New System.Windows.Forms.Label()
+        Me.deleteModeLabel = New System.Windows.Forms.Label()
         CType(Me.backButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -121,7 +122,7 @@ Partial Class calendarControl
         '
         Me.backButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.backButton.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.backButton.Location = New System.Drawing.Point(34, 28)
+        Me.backButton.Location = New System.Drawing.Point(30, 37)
         Me.backButton.Name = "backButton"
         Me.backButton.Size = New System.Drawing.Size(47, 41)
         Me.backButton.TabIndex = 12
@@ -1009,10 +1010,24 @@ Partial Class calendarControl
         Me.Label87.TabIndex = 116
         Me.Label87.Text = "Fri"
         '
+        'deleteModeLabel
+        '
+        Me.deleteModeLabel.AutoSize = True
+        Me.deleteModeLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.deleteModeLabel.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.deleteModeLabel.ForeColor = System.Drawing.Color.Red
+        Me.deleteModeLabel.Location = New System.Drawing.Point(99, 48)
+        Me.deleteModeLabel.Name = "deleteModeLabel"
+        Me.deleteModeLabel.Size = New System.Drawing.Size(150, 31)
+        Me.deleteModeLabel.TabIndex = 117
+        Me.deleteModeLabel.Text = "Delete Mode"
+        Me.deleteModeLabel.Visible = False
+        '
         'calendarControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.deleteModeLabel)
         Me.Controls.Add(Me.Label87)
         Me.Controls.Add(Me.Label86)
         Me.Controls.Add(Me.Label85)
@@ -1205,4 +1220,5 @@ Partial Class calendarControl
     Friend WithEvents Label85 As Label
     Friend WithEvents Label86 As Label
     Friend WithEvents Label87 As Label
+    Friend WithEvents deleteModeLabel As Label
 End Class
