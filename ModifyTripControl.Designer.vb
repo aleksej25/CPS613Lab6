@@ -24,12 +24,13 @@ Partial Class ModifyTripControl
     Private Sub InitializeComponent()
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.newDestLabel = New System.Windows.Forms.Label()
         Me.ToLocationBox = New System.Windows.Forms.ComboBox()
-        Me.EndTimeBox = New System.Windows.Forms.ComboBox()
         Me.ChangeButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.addLegButton = New System.Windows.Forms.RadioButton()
+        Me.newDestButton = New System.Windows.Forms.RadioButton()
+        Me.costLabel = New System.Windows.Forms.Label()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,59 +49,43 @@ Partial Class ModifyTripControl
         Me.TitleLabel.AutoSize = True
         Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(91, 59)
+        Me.TitleLabel.Location = New System.Drawing.Point(91, 63)
         Me.TitleLabel.Name = "TitleLabel"
         Me.TitleLabel.Size = New System.Drawing.Size(153, 35)
         Me.TitleLabel.TabIndex = 14
         Me.TitleLabel.Text = "Modify trip"
         '
-        'Label1
+        'newDestLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(35, 173)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 23)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "New destination:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(35, 227)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(119, 23)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "New end time:"
+        Me.newDestLabel.AutoSize = True
+        Me.newDestLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.newDestLabel.ForeColor = System.Drawing.Color.White
+        Me.newDestLabel.Location = New System.Drawing.Point(45, 244)
+        Me.newDestLabel.Name = "newDestLabel"
+        Me.newDestLabel.Size = New System.Drawing.Size(89, 28)
+        Me.newDestLabel.TabIndex = 15
+        Me.newDestLabel.Text = "Add Leg:"
+        Me.newDestLabel.Visible = False
         '
         'ToLocationBox
         '
         Me.ToLocationBox.FormattingEnabled = True
-        Me.ToLocationBox.Location = New System.Drawing.Point(179, 173)
+        Me.ToLocationBox.Location = New System.Drawing.Point(162, 251)
         Me.ToLocationBox.Name = "ToLocationBox"
         Me.ToLocationBox.Size = New System.Drawing.Size(121, 23)
         Me.ToLocationBox.TabIndex = 17
-        '
-        'EndTimeBox
-        '
-        Me.EndTimeBox.FormattingEnabled = True
-        Me.EndTimeBox.Location = New System.Drawing.Point(179, 227)
-        Me.EndTimeBox.Name = "EndTimeBox"
-        Me.EndTimeBox.Size = New System.Drawing.Size(121, 23)
-        Me.EndTimeBox.TabIndex = 18
+        Me.ToLocationBox.Visible = False
         '
         'ChangeButton
         '
         Me.ChangeButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ChangeButton.Location = New System.Drawing.Point(110, 290)
+        Me.ChangeButton.Location = New System.Drawing.Point(110, 490)
         Me.ChangeButton.Name = "ChangeButton"
         Me.ChangeButton.Size = New System.Drawing.Size(122, 66)
         Me.ChangeButton.TabIndex = 19
         Me.ChangeButton.Text = "Confirm Change"
         Me.ChangeButton.UseVisualStyleBackColor = True
+        Me.ChangeButton.Visible = False
         '
         'PictureBox1
         '
@@ -111,16 +96,53 @@ Partial Class ModifyTripControl
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
+        'addLegButton
+        '
+        Me.addLegButton.AutoSize = True
+        Me.addLegButton.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.addLegButton.ForeColor = System.Drawing.Color.White
+        Me.addLegButton.Location = New System.Drawing.Point(45, 162)
+        Me.addLegButton.Name = "addLegButton"
+        Me.addLegButton.Size = New System.Drawing.Size(105, 32)
+        Me.addLegButton.TabIndex = 22
+        Me.addLegButton.Text = "Add Leg"
+        Me.addLegButton.UseVisualStyleBackColor = True
+        '
+        'newDestButton
+        '
+        Me.newDestButton.AutoSize = True
+        Me.newDestButton.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.newDestButton.ForeColor = System.Drawing.Color.White
+        Me.newDestButton.Location = New System.Drawing.Point(45, 124)
+        Me.newDestButton.Name = "newDestButton"
+        Me.newDestButton.Size = New System.Drawing.Size(186, 32)
+        Me.newDestButton.TabIndex = 21
+        Me.newDestButton.Text = "New Destination"
+        Me.newDestButton.UseVisualStyleBackColor = True
+        '
+        'costLabel
+        '
+        Me.costLabel.AutoSize = True
+        Me.costLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.costLabel.ForeColor = System.Drawing.Color.White
+        Me.costLabel.Location = New System.Drawing.Point(45, 368)
+        Me.costLabel.Name = "costLabel"
+        Me.costLabel.Size = New System.Drawing.Size(27, 30)
+        Me.costLabel.TabIndex = 27
+        Me.costLabel.Text = "T"
+        Me.costLabel.Visible = False
+        '
         'ModifyTripControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.costLabel)
+        Me.Controls.Add(Me.addLegButton)
+        Me.Controls.Add(Me.newDestButton)
         Me.Controls.Add(Me.ChangeButton)
-        Me.Controls.Add(Me.EndTimeBox)
         Me.Controls.Add(Me.ToLocationBox)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.newDestLabel)
         Me.Controls.Add(Me.TitleLabel)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox1)
@@ -135,10 +157,11 @@ Partial Class ModifyTripControl
 
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents TitleLabel As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents newDestLabel As Label
     Friend WithEvents ToLocationBox As ComboBox
-    Friend WithEvents EndTimeBox As ComboBox
     Friend WithEvents ChangeButton As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents addLegButton As RadioButton
+    Friend WithEvents newDestButton As RadioButton
+    Friend WithEvents costLabel As Label
 End Class

@@ -50,6 +50,7 @@ Partial Class tripedit
         Me.tripdetails.Location = New System.Drawing.Point(30, 151)
         Me.tripdetails.Multiline = True
         Me.tripdetails.Name = "tripdetails"
+        Me.tripdetails.ReadOnly = True
         Me.tripdetails.Size = New System.Drawing.Size(270, 184)
         Me.tripdetails.TabIndex = 22
         Me.tripdetails.Text = "Location: SLC" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Destinations: Union Station, Yorkdale Mall" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Time of departure: 2:0" &
@@ -64,6 +65,7 @@ Partial Class tripedit
         Me.RichTextBox1.Location = New System.Drawing.Point(33, 82)
         Me.RichTextBox1.Multiline = False
         Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(254, 46)
         Me.RichTextBox1.TabIndex = 21
         Me.RichTextBox1.Text = "EDITED DETAILS"
