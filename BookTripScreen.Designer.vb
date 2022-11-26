@@ -37,6 +37,7 @@ Partial Class BookTripScreen
         Me.futureTimeBox = New System.Windows.Forms.ComboBox()
         Me.BookButton = New System.Windows.Forms.Button()
         Me.CaptionLabel = New System.Windows.Forms.Label()
+        Me.costLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -175,7 +176,7 @@ Partial Class BookTripScreen
         'BookButton
         '
         Me.BookButton.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BookButton.Location = New System.Drawing.Point(117, 508)
+        Me.BookButton.Location = New System.Drawing.Point(122, 527)
         Me.BookButton.Name = "BookButton"
         Me.BookButton.Size = New System.Drawing.Size(98, 50)
         Me.BookButton.TabIndex = 24
@@ -193,11 +194,24 @@ Partial Class BookTripScreen
         Me.CaptionLabel.TabIndex = 25
         Me.CaptionLabel.Text = "Today is Thursday, 10:00AM"
         '
+        'costLabel
+        '
+        Me.costLabel.AutoSize = True
+        Me.costLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.costLabel.ForeColor = System.Drawing.Color.White
+        Me.costLabel.Location = New System.Drawing.Point(50, 460)
+        Me.costLabel.Name = "costLabel"
+        Me.costLabel.Size = New System.Drawing.Size(25, 28)
+        Me.costLabel.TabIndex = 26
+        Me.costLabel.Text = "T"
+        Me.costLabel.Visible = False
+        '
         'BookTripScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.costLabel)
         Me.Controls.Add(Me.CaptionLabel)
         Me.Controls.Add(Me.BookButton)
         Me.Controls.Add(Me.futureTimeBox)
@@ -237,4 +251,5 @@ Partial Class BookTripScreen
     Friend WithEvents futureTimeBox As ComboBox
     Friend WithEvents BookButton As Button
     Friend WithEvents CaptionLabel As Label
+    Friend WithEvents costLabel As Label
 End Class

@@ -1,13 +1,27 @@
 ﻿Public Class requestdetails
-    Private Sub Goback_Click(sender As Object, e As EventArgs) Handles Goback.Click
+    Public waitTimer As Integer = 0
+    Private Sub rejectButton_Click(sender As Object, e As EventArgs) Handles rejectButton.Click
+        RiderForm.CurrentTripControl1.StopTripButton.PerformClick()
+        RiderForm.rejectedBox.BringToFront()
+        RiderForm.rejectedBox.Show()
+        Form1.OwnerMainScreen1.Timer2.Start()
+        Me.RichTextBox2.Text = "Trip Rejected."
+        Me.RichTextBox2.ForeColor = Color.Red
+        Me.Timer1.Start()
+    End Sub
+
+    Private Sub continueButton_Click(sender As Object, e As EventArgs) Handles continueButton.Click
         Me.Hide()
     End Sub
 
-    Private Sub tripdetails_TextChanged(sender As Object, e As EventArgs) Handles tripdetails.TextChanged
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Me.waitTimer += 1
+        If Me.waitTimer >= 4 Then
+            Me.waitTimer = 0
+            Me.Timer1.Stop()
+            Me.Hide()
+            Me.RichTextBox2.Text = "This trip was automatically approved by the system."
+            Me.RichTextBox2.ForeColor = Color.Lime
+        End If
     End Sub
 End Class

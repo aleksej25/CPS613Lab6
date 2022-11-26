@@ -22,13 +22,15 @@ Partial Class requestdetails
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Goback = New System.Windows.Forms.PictureBox()
+        Me.rejectButton = New System.Windows.Forms.Button()
+        Me.continueButton = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -48,9 +50,10 @@ Partial Class requestdetails
         '
         Me.tripdetails.BackColor = System.Drawing.SystemColors.ControlDark
         Me.tripdetails.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.tripdetails.Location = New System.Drawing.Point(30, 151)
+        Me.tripdetails.Location = New System.Drawing.Point(30, 146)
         Me.tripdetails.Multiline = True
         Me.tripdetails.Name = "tripdetails"
+        Me.tripdetails.ReadOnly = True
         Me.tripdetails.Size = New System.Drawing.Size(270, 184)
         Me.tripdetails.TabIndex = 15
         Me.tripdetails.Text = "Location: SLC" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Destinations: Union Station, Yorkdale Mall" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Time of departure: 2:0" &
@@ -62,11 +65,11 @@ Partial Class requestdetails
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox2.Font = New System.Drawing.Font("Sitka Heading", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox2.ForeColor = System.Drawing.Color.Lime
-        Me.RichTextBox2.Location = New System.Drawing.Point(29, 355)
+        Me.RichTextBox2.Location = New System.Drawing.Point(30, 341)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(265, 115)
+        Me.RichTextBox2.Size = New System.Drawing.Size(262, 149)
         Me.RichTextBox2.TabIndex = 16
-        Me.RichTextBox2.Text = "This trip was approved by the system"
+        Me.RichTextBox2.Text = "This trip was automatically approved by the system"
         '
         'PictureBox1
         '
@@ -78,21 +81,36 @@ Partial Class requestdetails
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '
-        'Goback
+        'rejectButton
         '
-        Me.Goback.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Goback.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.Goback.Location = New System.Drawing.Point(30, 30)
-        Me.Goback.Name = "Goback"
-        Me.Goback.Size = New System.Drawing.Size(40, 40)
-        Me.Goback.TabIndex = 21
-        Me.Goback.TabStop = False
+        Me.rejectButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.rejectButton.Location = New System.Drawing.Point(174, 508)
+        Me.rejectButton.Name = "rejectButton"
+        Me.rejectButton.Size = New System.Drawing.Size(106, 47)
+        Me.rejectButton.TabIndex = 25
+        Me.rejectButton.Text = "Reject"
+        Me.rejectButton.UseVisualStyleBackColor = True
+        '
+        'continueButton
+        '
+        Me.continueButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.continueButton.Location = New System.Drawing.Point(46, 508)
+        Me.continueButton.Name = "continueButton"
+        Me.continueButton.Size = New System.Drawing.Size(106, 47)
+        Me.continueButton.TabIndex = 26
+        Me.continueButton.Text = "Continue"
+        Me.continueButton.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
         '
         'requestdetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Goback)
+        Me.Controls.Add(Me.continueButton)
+        Me.Controls.Add(Me.rejectButton)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.tripdetails)
         Me.Controls.Add(Me.RichTextBox1)
@@ -100,7 +118,6 @@ Partial Class requestdetails
         Me.Name = "requestdetails"
         Me.Size = New System.Drawing.Size(333, 640)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -109,5 +126,7 @@ Partial Class requestdetails
     Friend WithEvents tripdetails As TextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Goback As PictureBox
+    Friend WithEvents rejectButton As Button
+    Friend WithEvents continueButton As Button
+    Friend WithEvents Timer1 As Timer
 End Class

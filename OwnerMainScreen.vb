@@ -134,7 +134,6 @@
         RiderForm.kickedOutBox.BringToFront()
         RiderForm.kickedOutBox.Show()
         Me.Timer2.Start()
-        ' GIVE POP UP TO RIDER INFORMING THEY HAVE BEEN KICKED OUT
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -142,6 +141,8 @@
         If Me.kickOutTimer >= 6 Then
             RiderForm.kickedOutBox.SendToBack()
             RiderForm.kickedOutBox.Hide()
+            RiderForm.rejectedBox.SendToBack()
+            RiderForm.rejectedBox.Hide()
             Me.kickOutTimer = 0
             Me.Timer2.Stop()
         End If
