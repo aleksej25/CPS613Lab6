@@ -26,9 +26,8 @@ Partial Class tripedit
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Goback = New System.Windows.Forms.PictureBox()
+        Me.continueButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox2
@@ -80,21 +79,21 @@ Partial Class tripedit
         Me.PictureBox1.TabIndex = 24
         Me.PictureBox1.TabStop = False
         '
-        'Goback
+        'continueButton
         '
-        Me.Goback.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Goback.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.Goback.Location = New System.Drawing.Point(33, 27)
-        Me.Goback.Name = "Goback"
-        Me.Goback.Size = New System.Drawing.Size(43, 40)
-        Me.Goback.TabIndex = 26
-        Me.Goback.TabStop = False
+        Me.continueButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.continueButton.Location = New System.Drawing.Point(107, 502)
+        Me.continueButton.Name = "continueButton"
+        Me.continueButton.Size = New System.Drawing.Size(106, 47)
+        Me.continueButton.TabIndex = 27
+        Me.continueButton.Text = "Continue"
+        Me.continueButton.UseVisualStyleBackColor = True
         '
         'tripedit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Goback)
+        Me.Controls.Add(Me.continueButton)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.tripdetails)
         Me.Controls.Add(Me.RichTextBox1)
@@ -102,7 +101,6 @@ Partial Class tripedit
         Me.Name = "tripedit"
         Me.Size = New System.Drawing.Size(333, 640)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -111,5 +109,5 @@ Partial Class tripedit
     Friend WithEvents tripdetails As TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Goback As PictureBox
+    Friend WithEvents continueButton As Button
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class tripedit
-    Private Sub Goback_Click(sender As Object, e As EventArgs) Handles Goback.Click
+    Private Sub continueButton_Click(sender As Object, e As EventArgs) Handles continueButton.Click
         Me.Hide()
     End Sub
 End Class
