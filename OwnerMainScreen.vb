@@ -80,9 +80,6 @@
         Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audioMute
     End Function
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
         Form1.ECarControls.carBox.Enabled = True
         Me.Hide()
@@ -115,16 +112,15 @@
                 Form1.cameraFailureBox.Show()
                 Form1.cameraFailureBox.BringToFront()
                 Me.cameraFailureResolved = True
+            ElseIf Me.timerStatus = 85 And Not Me.breakInResolved Then
+                Form1.breakInBox.Show()
+                Form1.breakInBox.BringToFront()
+                Me.breakInResolved = True
+            ElseIf Me.timerStatus = 155 And Not Me.colisionResolved Then
+                Form1.collisionBox.Show()
+                Form1.collisionBox.BringToFront()
+                Me.colisionResolved = True
                 Me.Timer1.Stop()
-                'ElseIf Me.timerStatus = 750 And Not Me.breakInResolved Then
-                '    Form1.breakInBox.Show()
-                '    Form1.breakInBox.BringToFront()
-                '    Me.breakInResolved = True
-                'ElseIf Me.timerStatus = 1250 And Not Me.colisionResolved Then
-                '    Form1.collisionBox.Show()
-                '    Form1.collisionBox.BringToFront()
-                '    Me.colisionResolved = True
-                '    Me.Timer1.Stop()
             End If
         End If
     End Sub
@@ -147,5 +143,6 @@
             Me.Timer2.Stop()
         End If
     End Sub
+
 
 End Class

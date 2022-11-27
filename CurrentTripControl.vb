@@ -33,6 +33,8 @@
 
         Me.ArrivedLabel.Hide()
         Form1.OwnerMainScreen1.inUseLabel.Hide()
+        Form1.OwnerMainScreen1.Timer1.Start()
+
         Form1.OwnerMainScreen1.BookATripButton.Enabled = True
     End Sub
 
