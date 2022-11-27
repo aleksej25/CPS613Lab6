@@ -235,8 +235,8 @@ Public Class schedulerControl
 
             ActivityText = ActivityBox.Text
             RadiusText = RadiusBox.Text
-            Me.ActivityBox.Text = ""
-            Me.RadiusBox.Text = ""
+            Me.ActivityBox.Text = "Activity"
+            Me.RadiusBox.Text = "Radius"
             Me.Hide()
             Form1.CalendarControl1.Show()
         End If

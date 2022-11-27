@@ -1,5 +1,6 @@
 ﻿Public Class BookTripScreen
-
+    Public Generator As System.Random = New System.Random()
+    Public tripCost As Integer
     'Book Trip Screen'
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
@@ -39,13 +40,21 @@
     End Sub
 
     Private Sub NowRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles NowRadioButton.CheckedChanged
+        Me.tripCost = Generator.Next(13, 40)
         futureTimeLabel.Hide()
         futureTimeBox.Hide()
+        Me.costLabel.Text = "Cost: $" + Me.tripCost.ToString
+        Me.costLabel.Left = (Me.costLabel.Parent.Width \ 2) - (Me.costLabel.Width \ 2) - 3
+        Me.costLabel.Show()
     End Sub
 
     Private Sub LaterRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles LaterRadioButton.CheckedChanged
+        Me.tripCost = Generator.Next(13, 40)
         futureTimeLabel.Show()
         futureTimeBox.Show()
+        Me.costLabel.Text = "Cost: $" + Me.tripCost.ToString
+        Me.costLabel.Left = (Me.costLabel.Parent.Width \ 2) - (Me.costLabel.Width \ 2) - 3
+        Me.costLabel.Show()
     End Sub
 
     Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.Click
@@ -78,8 +87,14 @@
 
         Form1.OwnerMainScreen1.kickOutButton.Show()
 
-        Form1.Requestdetails1.tripdetails.Text = "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime
-        RiderForm.CurrentTripControl1.Timer.Start()
+        If RiderForm.riderBooking.FromLocation <> "Your current location." Then
+            Form1.Requestdetails1.tripdetails.Text = "From: " + RiderForm.riderBooking.FromLocation + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime
+            RiderForm.CurrentTripControl1.Timer.Start()
+        Else
+            Form1.Requestdetails1.tripdetails.Text = "From: Riders Location" + vbCrLf + "To: " + RiderForm.riderBooking.ToLocation + vbCrLf + "Number of people: " + RiderForm.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + RiderForm.riderBooking.FromTime
+            RiderForm.CurrentTripControl1.Timer.Start()
+        End If
+
 
 
         RiderForm.CurrentTripControl1.TitleLabel.Left = (RiderForm.CurrentTripControl1.TitleLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.TitleLabel.Width \ 2) - 3
@@ -94,6 +109,8 @@
         RiderForm.CurrentTripControl1.ContinueTripButton.Location = New Point(123, 376)
         RiderForm.CurrentTripControl1.CarControlButton.Location = New Point(55, 522)
         RiderForm.CurrentTripControl1.StopTripButton.Location = New Point(186, 522)
+
+        RiderForm.CurrentTripControl1.countDown = 0
 
         RiderForm.CurrentTripControl1.etaLabel.Text = "ETA: " + (30 - RiderForm.CurrentTripControl1.countDown).ToString + "Minutes"
         RiderForm.CurrentTripControl1.etaLabel.Left = (RiderForm.CurrentTripControl1.etaLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.etaLabel.Width \ 2) - 3
@@ -119,6 +136,8 @@
         RiderForm.CurrentTripControl1.ContactOwnerButton.Show()
         RiderForm.CurrentTripControl1.CarControlButton.Show()
         RiderForm.CurrentTripControl1.StopTripButton.Show()
+
+        Me.costLabel.Hide()
 
         Me.Hide()
         RiderForm.CurrentTripControl1.BringToFront()

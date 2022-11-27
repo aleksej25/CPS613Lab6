@@ -22,13 +22,15 @@ Partial Class tripedit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Goback = New System.Windows.Forms.PictureBox()
+        Me.continueButton = New System.Windows.Forms.Button()
+        Me.rejectButton = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox2
@@ -39,9 +41,9 @@ Partial Class tripedit
         Me.RichTextBox2.ForeColor = System.Drawing.Color.Lime
         Me.RichTextBox2.Location = New System.Drawing.Point(29, 355)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(265, 151)
+        Me.RichTextBox2.Size = New System.Drawing.Size(265, 105)
         Me.RichTextBox2.TabIndex = 23
-        Me.RichTextBox2.Text = "This modification was approved by the system"
+        Me.RichTextBox2.Text = "Awaiting Your Approval"
         '
         'tripdetails
         '
@@ -50,6 +52,7 @@ Partial Class tripedit
         Me.tripdetails.Location = New System.Drawing.Point(30, 151)
         Me.tripdetails.Multiline = True
         Me.tripdetails.Name = "tripdetails"
+        Me.tripdetails.ReadOnly = True
         Me.tripdetails.Size = New System.Drawing.Size(270, 184)
         Me.tripdetails.TabIndex = 22
         Me.tripdetails.Text = "Location: SLC" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Destinations: Union Station, Yorkdale Mall" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Time of departure: 2:0" &
@@ -64,6 +67,7 @@ Partial Class tripedit
         Me.RichTextBox1.Location = New System.Drawing.Point(33, 82)
         Me.RichTextBox1.Multiline = False
         Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(254, 46)
         Me.RichTextBox1.TabIndex = 21
         Me.RichTextBox1.Text = "EDITED DETAILS"
@@ -78,21 +82,36 @@ Partial Class tripedit
         Me.PictureBox1.TabIndex = 24
         Me.PictureBox1.TabStop = False
         '
-        'Goback
+        'continueButton
         '
-        Me.Goback.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Goback.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.Goback.Location = New System.Drawing.Point(33, 27)
-        Me.Goback.Name = "Goback"
-        Me.Goback.Size = New System.Drawing.Size(43, 40)
-        Me.Goback.TabIndex = 26
-        Me.Goback.TabStop = False
+        Me.continueButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.continueButton.Location = New System.Drawing.Point(44, 494)
+        Me.continueButton.Name = "continueButton"
+        Me.continueButton.Size = New System.Drawing.Size(106, 47)
+        Me.continueButton.TabIndex = 27
+        Me.continueButton.Text = "Continue"
+        Me.continueButton.UseVisualStyleBackColor = True
+        '
+        'rejectButton
+        '
+        Me.rejectButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.rejectButton.Location = New System.Drawing.Point(181, 494)
+        Me.rejectButton.Name = "rejectButton"
+        Me.rejectButton.Size = New System.Drawing.Size(106, 47)
+        Me.rejectButton.TabIndex = 28
+        Me.rejectButton.Text = "Reject"
+        Me.rejectButton.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
         '
         'tripedit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Goback)
+        Me.Controls.Add(Me.rejectButton)
+        Me.Controls.Add(Me.continueButton)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.tripdetails)
         Me.Controls.Add(Me.RichTextBox1)
@@ -100,7 +119,6 @@ Partial Class tripedit
         Me.Name = "tripedit"
         Me.Size = New System.Drawing.Size(333, 640)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Goback, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -109,5 +127,7 @@ Partial Class tripedit
     Friend WithEvents tripdetails As TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Goback As PictureBox
+    Friend WithEvents continueButton As Button
+    Friend WithEvents rejectButton As Button
+    Friend WithEvents Timer1 As Timer
 End Class

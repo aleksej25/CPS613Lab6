@@ -64,7 +64,7 @@ Partial Class ratingsControl
         'rateRidersButton
         '
         Me.rateRidersButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.rateRidersButton.Location = New System.Drawing.Point(95, 400)
+        Me.rateRidersButton.Location = New System.Drawing.Point(95, 409)
         Me.rateRidersButton.Name = "rateRidersButton"
         Me.rateRidersButton.Size = New System.Drawing.Size(139, 47)
         Me.rateRidersButton.TabIndex = 13

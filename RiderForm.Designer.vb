@@ -35,7 +35,9 @@ Partial Class RiderForm
         Me.RiderAirControl1 = New RentECar.riderAirControl()
         Me.RiderCameraViewControl1 = New RentECar.riderCameraViewControl()
         Me.kickedOutBox = New System.Windows.Forms.PictureBox()
+        Me.rejectedBox = New System.Windows.Forms.PictureBox()
         CType(Me.kickedOutBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rejectedBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BookTripScreen1
@@ -144,6 +146,16 @@ Partial Class RiderForm
         Me.kickedOutBox.TabStop = False
         Me.kickedOutBox.Visible = False
         '
+        'rejectedBox
+        '
+        Me.rejectedBox.Image = Global.RentECar.My.Resources.ProjectResources.requestRejected
+        Me.rejectedBox.Location = New System.Drawing.Point(21, 53)
+        Me.rejectedBox.Name = "rejectedBox"
+        Me.rejectedBox.Size = New System.Drawing.Size(285, 120)
+        Me.rejectedBox.TabIndex = 21
+        Me.rejectedBox.TabStop = False
+        Me.rejectedBox.Visible = False
+        '
         'RiderForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -162,12 +174,14 @@ Partial Class RiderForm
         Me.Controls.Add(Me.RiderClimateControl1)
         Me.Controls.Add(Me.RiderAirControl1)
         Me.Controls.Add(Me.RiderCameraViewControl1)
+        Me.Controls.Add(Me.rejectedBox)
         Me.Controls.Add(Me.kickedOutBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "RiderForm"
         Me.Text = "Rider View"
         CType(Me.kickedOutBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rejectedBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -184,4 +198,5 @@ Partial Class RiderForm
     Friend WithEvents RiderAirControl1 As riderAirControl
     Friend WithEvents RiderCameraViewControl1 As riderCameraViewControl
     Friend WithEvents kickedOutBox As PictureBox
+    Friend WithEvents rejectedBox As PictureBox
 End Class

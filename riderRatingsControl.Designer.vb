@@ -25,13 +25,13 @@ Partial Class riderRatingsControl
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.RatingBox = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.LastCarButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ScoreLabel = New System.Windows.Forms.Label()
         Me.ScoreBox = New System.Windows.Forms.ComboBox()
         Me.RateButton = New System.Windows.Forms.Button()
         Me.ThanksLabel = New System.Windows.Forms.Label()
+        Me.myRatingsButton = New System.Windows.Forms.Button()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RatingBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,7 +53,7 @@ Partial Class riderRatingsControl
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(35, 133)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 35)
+        Me.Label1.Size = New System.Drawing.Size(269, 35)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Your current rating is:"
         '
@@ -66,22 +66,12 @@ Partial Class riderRatingsControl
         Me.RatingBox.TabIndex = 13
         Me.RatingBox.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(98, 319)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(122, 58)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "My Ratings"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'LastCarButton
         '
-        Me.LastCarButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LastCarButton.Location = New System.Drawing.Point(98, 403)
+        Me.LastCarButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LastCarButton.Location = New System.Drawing.Point(97, 405)
         Me.LastCarButton.Name = "LastCarButton"
-        Me.LastCarButton.Size = New System.Drawing.Size(122, 58)
+        Me.LastCarButton.Size = New System.Drawing.Size(139, 47)
         Me.LastCarButton.TabIndex = 15
         Me.LastCarButton.Text = "Rate Last Car"
         Me.LastCarButton.UseVisualStyleBackColor = True
@@ -135,22 +125,32 @@ Partial Class riderRatingsControl
         Me.ThanksLabel.ForeColor = System.Drawing.Color.White
         Me.ThanksLabel.Location = New System.Drawing.Point(75, 544)
         Me.ThanksLabel.Name = "ThanksLabel"
-        Me.ThanksLabel.Size = New System.Drawing.Size(173, 28)
+        Me.ThanksLabel.Size = New System.Drawing.Size(175, 28)
         Me.ThanksLabel.TabIndex = 20
         Me.ThanksLabel.Text = "Thanks for rating!"
         Me.ThanksLabel.Visible = False
+        '
+        'myRatingsButton
+        '
+        Me.myRatingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.myRatingsButton.Location = New System.Drawing.Point(97, 343)
+        Me.myRatingsButton.Name = "myRatingsButton"
+        Me.myRatingsButton.Size = New System.Drawing.Size(139, 47)
+        Me.myRatingsButton.TabIndex = 21
+        Me.myRatingsButton.Text = "My Ratings"
+        Me.myRatingsButton.UseVisualStyleBackColor = True
         '
         'riderRatingsControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.myRatingsButton)
         Me.Controls.Add(Me.ThanksLabel)
         Me.Controls.Add(Me.RateButton)
         Me.Controls.Add(Me.ScoreBox)
         Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.LastCarButton)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RatingBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBox)
@@ -168,11 +168,11 @@ Partial Class riderRatingsControl
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents RatingBox As PictureBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents LastCarButton As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ScoreLabel As Label
     Friend WithEvents ScoreBox As ComboBox
     Friend WithEvents RateButton As Button
     Friend WithEvents ThanksLabel As Label
+    Friend WithEvents myRatingsButton As Button
 End Class

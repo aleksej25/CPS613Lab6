@@ -80,9 +80,6 @@
         Form1.MediaControls1.AudioBox.Image = My.Resources.ProjectResources.audioMute
     End Function
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
         Form1.ECarControls.carBox.Enabled = True
         Me.Hide()
@@ -115,16 +112,15 @@
                 Form1.cameraFailureBox.Show()
                 Form1.cameraFailureBox.BringToFront()
                 Me.cameraFailureResolved = True
+            ElseIf Me.timerStatus = 85 And Not Me.breakInResolved Then
+                Form1.breakInBox.Show()
+                Form1.breakInBox.BringToFront()
+                Me.breakInResolved = True
+            ElseIf Me.timerStatus = 155 And Not Me.colisionResolved Then
+                Form1.collisionBox.Show()
+                Form1.collisionBox.BringToFront()
+                Me.colisionResolved = True
                 Me.Timer1.Stop()
-                'ElseIf Me.timerStatus = 750 And Not Me.breakInResolved Then
-                '    Form1.breakInBox.Show()
-                '    Form1.breakInBox.BringToFront()
-                '    Me.breakInResolved = True
-                'ElseIf Me.timerStatus = 1250 And Not Me.colisionResolved Then
-                '    Form1.collisionBox.Show()
-                '    Form1.collisionBox.BringToFront()
-                '    Me.colisionResolved = True
-                '    Me.Timer1.Stop()
             End If
         End If
     End Sub
@@ -134,7 +130,6 @@
         RiderForm.kickedOutBox.BringToFront()
         RiderForm.kickedOutBox.Show()
         Me.Timer2.Start()
-        ' GIVE POP UP TO RIDER INFORMING THEY HAVE BEEN KICKED OUT
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -142,12 +137,12 @@
         If Me.kickOutTimer >= 6 Then
             RiderForm.kickedOutBox.SendToBack()
             RiderForm.kickedOutBox.Hide()
+            RiderForm.rejectedBox.SendToBack()
+            RiderForm.rejectedBox.Hide()
             Me.kickOutTimer = 0
             Me.Timer2.Stop()
         End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
-    End Sub
 End Class

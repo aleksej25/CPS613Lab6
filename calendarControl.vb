@@ -32,7 +32,7 @@
 
         If Label3.Text = "" Or Label3.Text = " " Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         Else
@@ -48,7 +48,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
 
@@ -65,7 +65,7 @@
 
         If Label7.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label7.Text <> "" Then
@@ -82,7 +82,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -90,7 +90,7 @@
     Private Sub Label57_Click(sender As Object, e As EventArgs)
         If Label57.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label57.Text <> "" Then
@@ -107,7 +107,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -115,7 +115,7 @@
     Private Sub Label50_Click(sender As Object, e As EventArgs)
         If Label50.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label50.Text <> "" Then
@@ -132,7 +132,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -140,7 +140,7 @@
     Private Sub Label43_Click(sender As Object, e As EventArgs)
         If Label43.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label43.Text <> "" Then
@@ -157,7 +157,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -165,7 +165,7 @@
     Private Sub Label36_Click(sender As Object, e As EventArgs)
         If Label36.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label36.Text <> "" Then
@@ -182,7 +182,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -190,7 +190,7 @@
     Private Sub Label29_Click(sender As Object, e As EventArgs)
         If Label29.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label29.Text <> "" Then
@@ -207,7 +207,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -215,7 +215,7 @@
     Private Sub Label22_Click(sender As Object, e As EventArgs)
         If Label22.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label22.Text <> "" Then
@@ -232,7 +232,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -249,7 +249,7 @@
 
         If Label75.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label75.Text <> "" Then
@@ -266,7 +266,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -282,7 +282,7 @@
 
         If Label76.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label76.Text <> "" Then
@@ -299,7 +299,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -315,7 +315,7 @@
 
         If Label77.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label77.Text <> "" Then
@@ -332,7 +332,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -348,7 +348,7 @@
 
         If Label78.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label78.Text <> "" Then
@@ -365,7 +365,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -381,7 +381,7 @@
 
         If Label79.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label79.Text <> "" Then
@@ -398,7 +398,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -414,7 +414,7 @@
 
         If Label81.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label81.Text <> "" Then
@@ -431,7 +431,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -447,7 +447,7 @@
 
         If Label80.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label80.Text <> "" Then
@@ -464,7 +464,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -479,7 +479,7 @@
 
         If Label74.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label74.Text <> "" Then
@@ -496,7 +496,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -512,7 +512,7 @@
 
         If Label72.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label72.Text <> "" Then
@@ -529,7 +529,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -544,7 +544,7 @@
 
         If Label69.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label69.Text <> "" Then
@@ -561,7 +561,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -576,7 +576,7 @@
 
         If Label62.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label62.Text <> "" Then
@@ -593,7 +593,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -609,7 +609,7 @@
 
         If Label63.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label63.Text <> "" Then
@@ -626,7 +626,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -641,7 +641,7 @@
 
         If Label64.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label64.Text <> "" Then
@@ -658,7 +658,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -673,7 +673,7 @@
 
         If Label66.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label66.Text <> "" Then
@@ -690,7 +690,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -705,7 +705,7 @@
 
         If Label67.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label67.Text <> "" Then
@@ -722,7 +722,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -737,7 +737,7 @@
 
         If Label65.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label65.Text <> "" Then
@@ -754,7 +754,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -769,7 +769,7 @@
 
         If Label71.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label71.Text <> "" Then
@@ -786,7 +786,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -801,7 +801,7 @@
 
         If Label70.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label70.Text <> "" Then
@@ -818,7 +818,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -833,7 +833,7 @@
 
         If Label40.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label40.Text <> "" Then
@@ -850,7 +850,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -865,7 +865,7 @@
 
         If Label41.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label41.Text <> "" Then
@@ -882,7 +882,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -897,7 +897,7 @@
 
         If Label43.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label43.Text <> "" Then
@@ -914,7 +914,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -929,7 +929,7 @@
 
         If Label42.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label42.Text <> "" Then
@@ -946,7 +946,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -961,7 +961,7 @@
 
         If Label2.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label2.Text <> "" Then
@@ -978,7 +978,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
 
@@ -994,7 +994,7 @@
 
         If Label4.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label4.Text <> "" Then
@@ -1011,7 +1011,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1026,7 +1026,7 @@
 
         If Label5.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label5.Text <> "" Then
@@ -1043,7 +1043,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1058,7 +1058,7 @@
 
         If Label6.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label6.Text <> "" Then
@@ -1075,7 +1075,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1090,7 +1090,7 @@
 
         If Label18.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label18.Text <> "" Then
@@ -1107,7 +1107,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1124,7 +1124,7 @@
 
         If Label25.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label25.Text <> "" Then
@@ -1141,7 +1141,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1156,7 +1156,7 @@
 
         If Label24.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label24.Text <> "" Then
@@ -1173,7 +1173,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1188,7 +1188,7 @@
 
         If Label23.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label23.Text <> "" Then
@@ -1205,7 +1205,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1220,7 +1220,7 @@
 
         If Label22.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label22.Text <> "" Then
@@ -1237,7 +1237,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1252,7 +1252,7 @@
 
         If Label21.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label21.Text <> "" Then
@@ -1269,7 +1269,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1285,7 +1285,7 @@
 
         If Label20.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label20.Text <> "" Then
@@ -1302,7 +1302,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1317,7 +1317,7 @@
 
         If Label19.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label19.Text <> "" Then
@@ -1334,7 +1334,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1349,7 +1349,7 @@
 
         If Label32.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label32.Text <> "" Then
@@ -1366,7 +1366,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1381,7 +1381,7 @@
 
         If Label31.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label31.Text <> "" Then
@@ -1398,7 +1398,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1413,7 +1413,7 @@
 
         If Label30.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label30.Text <> "" Then
@@ -1430,7 +1430,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1445,7 +1445,7 @@
 
         If Label29.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label29.Text <> "" Then
@@ -1462,7 +1462,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1477,7 +1477,7 @@
 
         If Label28.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label28.Text <> "" Then
@@ -1494,7 +1494,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1509,7 +1509,7 @@
 
         If Label27.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label27.Text <> "" Then
@@ -1526,7 +1526,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1541,7 +1541,7 @@
 
         If Label26.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label26.Text <> "" Then
@@ -1558,7 +1558,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1573,7 +1573,7 @@
 
         If Label39.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label39.Text <> "" Then
@@ -1590,7 +1590,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1605,7 +1605,7 @@
 
         If Label38.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label38.Text <> "" Then
@@ -1622,7 +1622,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1637,7 +1637,7 @@
 
         If Label37.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label37.Text <> "" Then
@@ -1654,7 +1654,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1669,7 +1669,7 @@
 
         If Label36.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label36.Text <> "" Then
@@ -1686,7 +1686,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1702,7 +1702,7 @@
 
         If Label35.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label35.Text <> "" Then
@@ -1719,7 +1719,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1734,7 +1734,7 @@
 
         If Label34.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label34.Text <> "" Then
@@ -1751,7 +1751,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1766,7 +1766,7 @@
 
         If Label33.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label33.Text <> "" Then
@@ -1783,7 +1783,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1798,7 +1798,7 @@
 
         If Label46.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label46.Text <> "" Then
@@ -1815,7 +1815,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1830,7 +1830,7 @@
 
         If Label45.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label45.Text <> "" Then
@@ -1847,7 +1847,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1862,7 +1862,7 @@
 
         If Label44.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label44.Text <> "" Then
@@ -1879,7 +1879,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1894,7 +1894,7 @@
 
         If Label53.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label53.Text <> "" Then
@@ -1911,7 +1911,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1926,7 +1926,7 @@
 
         If Label52.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label52.Text <> "" Then
@@ -1943,7 +1943,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1958,7 +1958,7 @@
 
         If Label51.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label51.Text <> "" Then
@@ -1975,7 +1975,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -1990,7 +1990,7 @@
 
         If Label50.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label50.Text <> "" Then
@@ -2007,7 +2007,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2022,7 +2022,7 @@
 
         If Label49.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label49.Text <> "" Then
@@ -2039,7 +2039,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2054,7 +2054,7 @@
 
         If Label48.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label48.Text <> "" Then
@@ -2071,7 +2071,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2086,7 +2086,7 @@
 
         If Label47.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label47.Text <> "" Then
@@ -2103,7 +2103,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2118,7 +2118,7 @@
 
         If Label60.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label60.Text <> "" Then
@@ -2135,7 +2135,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2150,7 +2150,7 @@
 
         If Label59.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label59.Text <> "" Then
@@ -2167,7 +2167,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2182,7 +2182,7 @@
 
         If Label58.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label58.Text <> "" Then
@@ -2199,7 +2199,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2214,7 +2214,7 @@
 
         If Label57.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label57.Text <> "" Then
@@ -2231,7 +2231,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2246,7 +2246,7 @@
 
         If Label56.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label56.Text <> "" Then
@@ -2263,7 +2263,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2278,7 +2278,7 @@
 
         If Label55.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label55.Text <> "" Then
@@ -2295,7 +2295,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2310,7 +2310,7 @@
 
         If Label54.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label54.Text <> "" Then
@@ -2327,7 +2327,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2342,7 +2342,7 @@
 
         If Label73.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label73.Text <> "" Then
@@ -2359,7 +2359,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
     End Sub
@@ -2370,7 +2370,7 @@
 
         For Each label As Control In Me.Controls
 
-            If label.BackColor = Color.Blue Then
+            If label.BackColor = Color.PaleGreen Or label.BackColor = Color.LightBlue Or label.BackColor = Color.LightYellow Then
                 counter = counter + 1
             End If
 
@@ -2378,7 +2378,7 @@
         Next
 
         If counter = 0 And negativeClicked = False Then
-            MessageBox.Show("Not possible", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Not possible", "Information", MessageBoxButtons.OK)
             Exit Sub
         End If
 
@@ -2390,9 +2390,11 @@
 
         If negativeClicked = False Then
             negativeClicked = True
+            Me.deleteModeLabel.Show()
             Button1.Hide()
         ElseIf negativeClicked = True Then
             negativeClicked = False
+            Me.deleteModeLabel.Hide()
             Button1.Show()
         End If
 
@@ -2407,7 +2409,7 @@
 
         If Label61.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label61.Text <> "" Then
@@ -2424,7 +2426,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
 
         End If
 
@@ -2440,7 +2442,7 @@
 
         If Label68.Text = "" Then
 
-            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Nothing scheduled ", "Information", MessageBoxButtons.OK)
 
 
         ElseIf Label68.Text <> "" Then
@@ -2457,7 +2459,7 @@
 
             line2 = String2(1)
 
-            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OKCancel)
+            MessageBox.Show("Activity: " & line1 & vbCrLf & "Radius: " & line2, "Information", MessageBoxButtons.OK)
         End If
 
     End Sub

@@ -33,6 +33,8 @@
 
         Me.ArrivedLabel.Hide()
         Form1.OwnerMainScreen1.inUseLabel.Hide()
+        Form1.OwnerMainScreen1.Timer1.Start()
+
         Form1.OwnerMainScreen1.BookATripButton.Enabled = True
     End Sub
 
@@ -43,8 +45,7 @@
         Me.etaLabel.Left = (Me.etaLabel.Parent.Width \ 2) - (Me.etaLabel.Width \ 2) - 3
         Me.etaLabel.Show()
 
-        If countDown = 30 Then
-
+        If countDown = 30 And Not RiderForm.riderBooking.TripModified Then
             RiderForm.riderBooking.RideEnded = True
             Me.ModifyTripButton.Hide()
             Me.ContactOwnerButton.Hide()
@@ -58,6 +59,12 @@
             Me.etaLabel.Hide()
 
             Timer.Stop()
+        ElseIf countDown = 30 And RiderForm.riderBooking.TripModified Then
+            Me.ArrivedLabel.Show()
+            Me.countDown = 0
+            Me.etaLabel.Hide()
+            Me.ContinueTripButton.Enabled = True
+            Timer.Stop()
         End If
     End Sub
 
@@ -70,6 +77,7 @@
         Me.Hide()
         RiderForm.ModifyTripControl1.BringToFront()
         RiderForm.ModifyTripControl1.Show()
+        Me.Timer.Stop()
     End Sub
 
     Private Sub ContinueTripButton_Click(sender As Object, e As EventArgs) Handles ContinueTripButton.Click
@@ -90,4 +98,5 @@
         RiderForm.CurrentTripControl1.DestinationLabel.Left = (RiderForm.CurrentTripControl1.DestinationLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.DestinationLabel.Width \ 2) - 3
         RiderForm.CurrentTripControl1.ArrivedLabel.Left = (RiderForm.CurrentTripControl1.ArrivedLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.ArrivedLabel.Width \ 2) - 3
     End Sub
+
 End Class
