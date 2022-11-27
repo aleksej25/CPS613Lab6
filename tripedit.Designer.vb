@@ -22,11 +22,14 @@ Partial Class tripedit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.continueButton = New System.Windows.Forms.Button()
+        Me.rejectButton = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,9 +41,9 @@ Partial Class tripedit
         Me.RichTextBox2.ForeColor = System.Drawing.Color.Lime
         Me.RichTextBox2.Location = New System.Drawing.Point(29, 355)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(265, 151)
+        Me.RichTextBox2.Size = New System.Drawing.Size(265, 105)
         Me.RichTextBox2.TabIndex = 23
-        Me.RichTextBox2.Text = "This modification was approved by the system"
+        Me.RichTextBox2.Text = "Awaiting Your Approval"
         '
         'tripdetails
         '
@@ -82,17 +85,32 @@ Partial Class tripedit
         'continueButton
         '
         Me.continueButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.continueButton.Location = New System.Drawing.Point(107, 502)
+        Me.continueButton.Location = New System.Drawing.Point(44, 494)
         Me.continueButton.Name = "continueButton"
         Me.continueButton.Size = New System.Drawing.Size(106, 47)
         Me.continueButton.TabIndex = 27
         Me.continueButton.Text = "Continue"
         Me.continueButton.UseVisualStyleBackColor = True
         '
+        'rejectButton
+        '
+        Me.rejectButton.Font = New System.Drawing.Font("Sitka Text", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.rejectButton.Location = New System.Drawing.Point(181, 494)
+        Me.rejectButton.Name = "rejectButton"
+        Me.rejectButton.Size = New System.Drawing.Size(106, 47)
+        Me.rejectButton.TabIndex = 28
+        Me.rejectButton.Text = "Reject"
+        Me.rejectButton.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'tripedit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.rejectButton)
         Me.Controls.Add(Me.continueButton)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.tripdetails)
@@ -110,4 +128,6 @@ Partial Class tripedit
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents continueButton As Button
+    Friend WithEvents rejectButton As Button
+    Friend WithEvents Timer1 As Timer
 End Class

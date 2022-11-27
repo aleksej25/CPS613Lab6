@@ -197,8 +197,8 @@ Partial Class BookTripScreen
         'costLabel
         '
         Me.costLabel.AutoSize = True
-        Me.costLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.costLabel.ForeColor = System.Drawing.Color.White
+        Me.costLabel.Font = New System.Drawing.Font("Sitka Small", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.costLabel.ForeColor = System.Drawing.Color.Red
         Me.costLabel.Location = New System.Drawing.Point(50, 460)
         Me.costLabel.Name = "costLabel"
         Me.costLabel.Size = New System.Drawing.Size(25, 28)

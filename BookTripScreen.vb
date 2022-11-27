@@ -44,6 +44,7 @@
         futureTimeLabel.Hide()
         futureTimeBox.Hide()
         Me.costLabel.Text = "Cost: $" + Me.tripCost.ToString
+        Me.costLabel.Left = (Me.costLabel.Parent.Width \ 2) - (Me.costLabel.Width \ 2) - 3
         Me.costLabel.Show()
     End Sub
 
@@ -52,6 +53,7 @@
         futureTimeLabel.Show()
         futureTimeBox.Show()
         Me.costLabel.Text = "Cost: $" + Me.tripCost.ToString
+        Me.costLabel.Left = (Me.costLabel.Parent.Width \ 2) - (Me.costLabel.Width \ 2) - 3
         Me.costLabel.Show()
     End Sub
 
@@ -107,6 +109,8 @@
         RiderForm.CurrentTripControl1.ContinueTripButton.Location = New Point(123, 376)
         RiderForm.CurrentTripControl1.CarControlButton.Location = New Point(55, 522)
         RiderForm.CurrentTripControl1.StopTripButton.Location = New Point(186, 522)
+
+        RiderForm.CurrentTripControl1.countDown = 0
 
         RiderForm.CurrentTripControl1.etaLabel.Text = "ETA: " + (30 - RiderForm.CurrentTripControl1.countDown).ToString + "Minutes"
         RiderForm.CurrentTripControl1.etaLabel.Left = (RiderForm.CurrentTripControl1.etaLabel.Parent.Width \ 2) - (RiderForm.CurrentTripControl1.etaLabel.Width \ 2) - 3
